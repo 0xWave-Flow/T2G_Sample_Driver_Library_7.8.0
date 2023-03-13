@@ -1,0 +1,251 @@
+<?xml version='1.0'?>
+<datamodel version="5.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/12/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/12/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="Gpt" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="Gpt" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_T40D13M1I0R0/Gpt"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:lst name="GptChannelConfigSet" type="MAP">
+                <d:ctr name="GptChannelConfigSet_0" type="IDENTIFIABLE">
+                  <d:lst name="GptChannelConfiguration" type="MAP">
+                    <d:ctr name="Timer_16bit_1kHz" type="IDENTIFIABLE">
+                      <d:var name="GptChannelId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptTimer" type="ENUMERATION" 
+                             value="TCPWM_0_0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptChannelMode" type="ENUMERATION" 
+                             value="GPT_CH_MODE_CONTINUOUS">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="GptChannelClkSrc" type="ENUMERATION" 
+                             value="CLK_INT">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="GptChannelClkSrcRef" type="REFERENCE" 
+                             value="ASPath:/Gpt/Gpt/GptDriverConfiguration/CLK_TCPWM0_GRP0_0"/>
+                      <d:var name="GptChannelTickFrequency" type="FLOAT" 
+                             value="1000.0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@CALC</a:v>
+                          <a:v>@DEF</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptInputTriggerSelection" type="ENUMERATION" 
+                             value="TCPWM_0_TR_ONE_CNT_IN_0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptChannelPrescale" type="ENUMERATION" 
+                             value="GPT_PRESCALE_1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="GptChannelTickValueMax" type="INTEGER" 
+                             value="65535"/>
+                      <d:var name="GptEnableWakeup" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="GptEnableDebug" type="BOOLEAN" value="true"/>
+                      <d:var name="GptNotification" type="FUNCTION-NAME" 
+                             value="Timer_16bit_1kHz_Notification">
+                        <a:a name="ENABLE" value="true"/>
+                      </d:var>
+                      <d:var name="GptHwTriggerOutputLine" type="ENUMERATION" 
+                             value="TR_OUT0">
+                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:lst name="GptWakeupConfiguration" type="MAP"/>
+                    </d:ctr>
+                    <d:ctr name="Timer_32bit_1MHz" type="IDENTIFIABLE">
+                      <d:var name="GptChannelId" type="INTEGER" value="1"/>
+                      <d:var name="GptTimer" type="ENUMERATION" 
+                             value="TCPWM_0_513"/>
+                      <d:var name="GptChannelMode" type="ENUMERATION" 
+                             value="GPT_CH_MODE_CONTINUOUS">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="GptChannelClkSrc" type="ENUMERATION" 
+                             value="CLK_INT">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="GptChannelClkSrcRef" type="REFERENCE" 
+                             value="ASPath:/Gpt/Gpt/GptDriverConfiguration/CLK_TCPWM0_GRP2_1"/>
+                      <d:var name="GptChannelTickFrequency" type="FLOAT" 
+                             value="1000000.0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@CALC</a:v>
+                          <a:v>@DEF</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptInputTriggerSelection" type="ENUMERATION" 
+                             value="TCPWM_0_TR_ONE_CNT_IN_0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptChannelPrescale" type="ENUMERATION" 
+                             value="GPT_PRESCALE_1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="GptChannelTickValueMax" type="INTEGER" 
+                             value="4294967295"/>
+                      <d:var name="GptEnableWakeup" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="GptEnableDebug" type="BOOLEAN" value="true"/>
+                      <d:var name="GptNotification" type="FUNCTION-NAME" 
+                             value="Timer_32bit_1MHz_Notification">
+                        <a:a name="ENABLE" value="true"/>
+                      </d:var>
+                      <d:var name="GptHwTriggerOutputLine" type="ENUMERATION" 
+                             value="TR_OUT0">
+                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:lst name="GptWakeupConfiguration" type="MAP"/>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="GptPredefTimerChannelConfiguration" type="MAP">
+                    <d:ctr name="GptPredefTimerChannelConfiguration_0" 
+                           type="IDENTIFIABLE">
+                      <d:var name="GptPredefTimer" type="ENUMERATION" 
+                             value="TCPWM_0_512"/>
+                      <d:ref name="GptPredefTimerClkSrcRef" type="REFERENCE" 
+                             value="ASPath:/Gpt/Gpt/GptDriverConfiguration/CLK_TCPWM0_GRP2_0"/>
+                      <d:var name="GptPredefTimerType" type="ENUMERATION" 
+                             value="GPT_PREDEF_TIMER_1US_16_24_32BIT"/>
+                      <d:var name="GptPredefTimerTickFrequencyResult" 
+                             type="FLOAT" value="1000000.0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="GptPredefTimerEnableDebug" type="BOOLEAN" 
+                             value="true"/>
+                    </d:ctr>
+                  </d:lst>
+                  <d:ctr name="GptPredefTimerStartTriggerConfiguration" 
+                         type="IDENTIFIABLE">
+                    <d:var name="GptPredefTimerStartTriggerSelect" 
+                           type="ENUMERATION" value="TCPWM_0_TR_ALL_CNT_IN_0">
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO">
+                        <a:v>@DEF</a:v>
+                        <a:v>@CALC</a:v>
+                      </a:a>
+                    </d:var>
+                  </d:ctr>
+                </d:ctr>
+              </d:lst>
+              <d:ctr name="GptConfigurationOfOptApiServices" 
+                     type="IDENTIFIABLE">
+                <d:var name="GptDeinitApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptEnableDisableNotificationApi" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptTimeElapsedApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptTimeRemainingApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptVersionInfoApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptWakeupFunctionalityApi" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptSafetyFunctionApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptSetPrescalerApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptSetPredefTimerPrescalerApi" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="GptDriverConfiguration" type="IDENTIFIABLE">
+                <d:var name="GptDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptReportWakeupSource" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="GptPredefTimer100us32bitEnable" type="BOOLEAN" 
+                       value="false"/>
+                <d:var name="GptPredefTimer1usEnablingGrade" type="ENUMERATION" 
+                       value="GPT_PREDEF_TIMER_1US_16_24_32BIT_ENABLED"/>
+                <d:lst name="GptClockReferencePoint" type="MAP">
+                  <d:ctr name="CLK_TCPWM0_GRP0_0" type="IDENTIFIABLE">
+                    <d:ref name="GptClockReference" type="REFERENCE" 
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration_0/McuClockSettingConfig_Active/CLK_TCPWM0_GRP0_0"/>
+                  </d:ctr>
+                  <d:ctr name="CLK_TCPWM0_GRP2_0" type="IDENTIFIABLE">
+                    <d:ref name="GptClockReference" type="REFERENCE" 
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration_0/McuClockSettingConfig_Active/CLK_TCPWM0_GRP2_0"/>
+                  </d:ctr>
+                  <d:ctr name="CLK_TCPWM0_GRP2_1" type="IDENTIFIABLE">
+                    <d:ref name="GptClockReference" type="REFERENCE" 
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration_0/McuClockSettingConfig_Active/CLK_TCPWM0_GRP2_1"/>
+                  </d:ctr>
+                </d:lst>
+                <d:var name="GptErrorCalloutFunction" type="FUNCTION-NAME" 
+                       value="ErrorCalloutHandler">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:lst name="GptIncludeFile">
+                  <d:var type="STRING" value="ErrorCalloutHandler.h">
+                    <a:a name="IMPORTER_INFO" value="@DEF"/>
+                  </d:var>
+                  <d:var type="STRING" value="mcal_notifications.h"/>
+                </d:lst>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

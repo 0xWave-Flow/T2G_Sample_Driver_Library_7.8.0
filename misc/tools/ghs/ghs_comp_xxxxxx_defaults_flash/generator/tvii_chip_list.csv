@@ -1,0 +1,165 @@
+// Help:
+// - Comment lines for this CSV file are starting with '//'
+// - Lines that will end up as commented lines in the generated ODB file are starting with '#'
+// - Lines that will end up as empty lines in the generated ODB file are starting with '@'
+// - An additional separator line will be generated in the ODB file after each valid CSV row entries. (The separator can be configured in the .py script)
+// 
+// Default (mandatory) CSV columns: 
+// Description, Family ID, Silicon ID, CodeFlash #0 Large Sectors, CodeFlash #0 Small Sectors, WorkFlash #0 Large Sectors, WorkFlash #0 Small Sectors
+//
+// Further optional columns:
+// CodeFlash #1 Large Sectors, CodeFlash #1 Small Sectors, WorkFlash #1 Large Sectors, WorkFlash #1 Small Sectors
+//
+// Note: The necessary values (besides Family ID) can be retrieved from the 'Ordering Information' in the device datasheets
+//==========================================================================================================================
+
+#====================================== Traveo II - CYT2B6 series (TVII-B-E-512K) ===============================================
+@
+"CYT2B63BAS/E (64-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, SHE)",          0x101, 0xe349, 14, 16, 24, 128
+"CYT2B63CAS/E (64-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, HSM)",          0x101, 0xe34a, 14, 16, 24, 128
+"CYT2B63DAS/E (64-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, HSM, RSA 4K)",  0x101, 0xe34b, 14, 16, 24, 128
+"CYT2B64BAS/E (80-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, SHE)",          0x101, 0xe351, 14, 16, 24, 128
+"CYT2B64CAS/E (80-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, HSM)",          0x101, 0xe352, 14, 16, 24, 128
+"CYT2B64DAS/E (80-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, HSM, RSA 4K)",  0x101, 0xe353, 14, 16, 24, 128
+"CYT2B65BAS/E (100-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, SHE)",         0x101, 0xe359, 14, 16, 24, 128
+"CYT2B65CAS/E (100-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, HSM)",         0x101, 0xe35a, 14, 16, 24, 128
+"CYT2B65DAS/E (100-LQFP, CodeFlash: 576KB, WorkFlash: 64KB, RAM: 64KB, HSM, RSA 4K)", 0x101, 0xe35b, 14, 16, 24, 128
+@
+#====================================== Traveo II - CYT2B7 series (TVII-B-E-1M) ===============================================
+@
+"CYT2B73BAS/E (64-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, SHE)",          0x101, 0xe3c9, 30, 16, 36, 192
+"CYT2B73CAS/E (64-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM)",          0x101, 0xe3ca, 30, 16, 36, 192
+"CYT2B73DAS/E (64-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM, RSA 4K)",  0x101, 0xe3cb, 30, 16, 36, 192
+"CYT2B74BAS/E (80-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, SHE)",          0x101, 0xe3d1, 30, 16, 36, 192
+"CYT2B74CAS/E (80-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM)",          0x101, 0xe3d2, 30, 16, 36, 192
+"CYT2B74DAS/E (80-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM, RSA 4K)",  0x101, 0xe3d3, 30, 16, 36, 192
+"CYT2B75BAS/E (100-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, SHE)",         0x101, 0xe3d9, 30, 16, 36, 192
+"CYT2B75CAS/E (100-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM)",         0x101, 0xe3da, 30, 16, 36, 192
+"CYT2B75DAS/E (100-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM, RSA 4K)", 0x101, 0xe3db, 30, 16, 36, 192
+"CYT2B77BAS/E (144-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, SHE)",         0x101, 0xe3e1, 30, 16, 36, 192
+"CYT2B77CAS/E (144-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM)",         0x101, 0xe3e2, 30, 16, 36, 192
+"CYT2B77DAS/E (144-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM, RSA 4K)", 0x101, 0xe3e3, 30, 16, 36, 192
+"CYT2B78BAS/E (176-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, SHE)",         0x101, 0xe3e9, 30, 16, 36, 192
+"CYT2B78CAS/E (176-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM)",         0x101, 0xe3ea, 30, 16, 36, 192
+"CYT2B78DAS/E (176-LQFP, CodeFlash: 1088KB, WorkFlash: 96KB, RAM: 128KB, HSM, RSA 4K)", 0x101, 0xe3eb, 30, 16, 36, 192
+@
+#====================================== Traveo II - CYT2B9 series (TVII-B-E-2M) ===============================================
+@
+"CYT2B93BAS/E (64-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, SHE)",          0x104, 0xe6c9, 62, 16, 48, 256
+"CYT2B93CAS/E (64-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM)",          0x104, 0xe6ca, 62, 16, 48, 256
+"CYT2B93DAS/E (64-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM, RSA 4K)",  0x104, 0xe6cb, 62, 16, 48, 256
+"CYT2B94BAS/E (80-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, SHE)",          0x104, 0xe6d1, 62, 16, 48, 256
+"CYT2B94CAS/E (80-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM)",          0x104, 0xe6d2, 62, 16, 48, 256
+"CYT2B94DAS/E (80-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM, RSA 4K)",  0x104, 0xe6d3, 62, 16, 48, 256
+"CYT2B95BAS/E (100-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, SHE)",         0x104, 0xe6d9, 62, 16, 48, 256
+"CYT2B95CAS/E (100-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM)",         0x104, 0xe6da, 62, 16, 48, 256
+"CYT2B95DAS/E (100-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM, RSA 4K)", 0x104, 0xe6db, 62, 16, 48, 256
+"CYT2B97BAS/E (144-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, SHE)",         0x104, 0xe6e1, 62, 16, 48, 256
+"CYT2B97CAS/E (144-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM)",         0x104, 0xe6e2, 62, 16, 48, 256
+"CYT2B97DAS/E (144-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM, RSA 4K)", 0x104, 0xe6e3, 62, 16, 48, 256
+"CYT2B98BAS/E (176-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, SHE)",         0x104, 0xe6e9, 62, 16, 48, 256
+"CYT2B98CAS/E (176-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM)",         0x104, 0xe6ea, 62, 16, 48, 256
+"CYT2B98DAS/E (176-LQFP, CodeFlash: 2112KB, WorkFlash: 128KB, RAM: 256KB, HSM, RSA 4K)", 0x104, 0xe6eb, 62, 16, 48, 256
+@
+#====================================== Traveo II - CYT2BL series (TVII-B-E-4M) ===============================================
+@
+"CYT2BL3BAS/E (64-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, SHE)",          0x108, 0xea01, 126, 16, 48, 256
+"CYT2BL3CAS/E (64-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM)",          0x108, 0xea02, 126, 16, 48, 256
+"CYT2BL3DAS/E (64-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM, RSA 4K)",  0x108, 0xea0c, 126, 16, 48, 256
+"CYT2BL4BAS/E (80-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, SHE)",          0x108, 0xea03, 126, 16, 48, 256
+"CYT2BL4CAS/E (80-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM)",          0x108, 0xea04, 126, 16, 48, 256
+"CYT2BL4DAS/E (80-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM, RSA 4K)",  0x108, 0xea0d, 126, 16, 48, 256
+"CYT2BL5BAS/E (100-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, SHE)",         0x108, 0xea05, 126, 16, 48, 256
+"CYT2BL5CAS/E (100-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM)",         0x108, 0xea06, 126, 16, 48, 256
+"CYT2BL5DAS/E (100-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM, RSA 4K)", 0x108, 0xea0e, 126, 16, 48, 256
+"CYT2BL7BAS/E (144-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, SHE)",         0x108, 0xea07, 126, 16, 48, 256
+"CYT2BL7CAS/E (144-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM)",         0x108, 0xea08, 126, 16, 48, 256
+"CYT2BL7DAS/E (144-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM, RSA 4K)", 0x108, 0xea0f, 126, 16, 48, 256
+"CYT2BL8BAS/E (176-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, SHE)",         0x108, 0xea09, 126, 16, 48, 256
+"CYT2BL8CAS/E (176-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM)",         0x108, 0xea0a, 126, 16, 48, 256
+"CYT2BL8DAS/E (176-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB, HSM, RSA 4K)", 0x108, 0xea10, 126, 16, 48, 256
+@
+#====================================== Traveo II - CYT4BB/CYT3BB series (TVII-B-H-4M) ========================================
+@
+"CYT3BB5CES/E (100-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",         0x107, 0xe919, 126, 16, 96, 512
+"CYT3BB5DES/E (100-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)", 0x107, 0xe921, 126, 16, 96, 512
+"CYT3BB7CES/E (144-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",         0x107, 0xe91a, 126, 16, 96, 512
+"CYT3BB7DES/E (144-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)", 0x107, 0xe922, 126, 16, 96, 512
+"CYT3BB8CES/E (176-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",         0x107, 0xe91b, 126, 16, 96, 512
+"CYT3BB8DES/E (176-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)", 0x107, 0xe923, 126, 16, 96, 512
+"CYT3BBBCES/E (272-BGA, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",           0x107, 0xe91c, 126, 16, 96, 512
+"CYT3BBBDES/E (272-BGA, 1xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)",   0x107, 0xe924, 126, 16, 96, 512
+"CYT4BB5CES/E (100-TEQFP, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",         0x107, 0xe91d, 126, 16, 96, 512
+"CYT4BB5DES/E (100-TEQFP, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)", 0x107, 0xe925, 126, 16, 96, 512
+"CYT4BB7CES/E (144-TEQFP, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",         0x107, 0xe91e, 126, 16, 96, 512
+"CYT4BB7DES/E (144-TEQFP, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)", 0x107, 0xe926, 126, 16, 96, 512
+"CYT4BB8CES/E (176-TEQFP, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",         0x107, 0xe91f, 126, 16, 96, 512
+"CYT4BB8DES/E (176-TEQFP, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)", 0x107, 0xe927, 126, 16, 96, 512
+"CYT4BBBCES/E (272-BGA, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB)",           0x107, 0xe920, 126, 16, 96, 512
+"CYT4BBBDES/E (272-BGA, 2xCM7, CodeFlash: 4160KB, WorkFlash: 256KB, RAM: 768KB, RSA 4K)",   0x107, 0xe928, 126, 16, 96, 512
+@
+#====================================== Traveo II - CYT4BF series (TVII-B-H-8M) ===============================================
+@
+"CYT4BF8CES/E (176-TEQFP, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)",         0x103, 0xe5d3, 254, 32, 96, 512 
+"CYT4BF8DES/E (176-TEQFP, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB, RSA 4K)", 0x103, 0xe510, 254, 32, 96, 512 
+"CYT4BF8CDS/E (176-TEQFP, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)",         0x103, 0xe5d7, 254, 32, 96, 512 
+"CYT4BF8DDS/E (176-TEQFP, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB, RSA 4K)", 0x103, 0xe511, 254, 32, 96, 512 
+"CYT4BFBCJS/E (272-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)",           0x103, 0xe5eb, 254, 32, 96, 512 
+"CYT4BFBDJS/E (272-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB, RSA 4K)",   0x103, 0xe512, 254, 32, 96, 512 
+"CYT4BFBCHS/E (272-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)",           0x103, 0xe5ef, 254, 32, 96, 512 
+"CYT4BFBDHS/E (272-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB, RSA 4K)",   0x103, 0xe513, 254, 32, 96, 512 
+"CYT4BFCCJS/E (320-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)",           0x103, 0xe5fb, 254, 32, 96, 512 
+"CYT4BFCDJS/E (320-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB, RSA 4K)",   0x103, 0xe514, 254, 32, 96, 512 
+"CYT4BFCCHS/E (320-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)",           0x103, 0xe5ff, 254, 32, 96, 512 
+"CYT4BFCDHS/E (320-BGA, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB, RSA 4K)",   0x103, 0xe515, 254, 32, 96, 512 
+@
+#====================================== Traveo II - CYT6BJ series (TVII-B-H-16M) ===============================================
+@
+"CYT6BJ8DDS/E (176-TEQFP, 4xCM7, CodeFlash: 16768KB, WorkFlash: 512KB, RAM: 2048KB)", 0x114, 0xed02, 254, 32, 96, 512, 254, 32, 96, 512 
+"CYT6BJ8DDS/E (176-TEQFP, 4xCM7, CodeFlash: 16768KB, WorkFlash: 512KB, RAM: 2048KB)", 0x114, 0xed02, 254, 32, 96, 512, 254, 32, 96, 512 
+"CYT6BJBDHS/E (272-BGA, 4xCM7, CodeFlash: 16768KB, WorkFlash: 512KB, RAM: 2048KB)",   0x114, 0xed04, 254, 32, 96, 512, 254, 32, 96, 512 
+"CYT6BJBDHS/E (272-BGA, 4xCM7, CodeFlash: 16768KB, WorkFlash: 512KB, RAM: 2048KB)",   0x114, 0xed04, 254, 32, 96, 512, 254, 32, 96, 512 
+"CYT6BJCDHS/E (320-BGA, 4xCM7, CodeFlash: 16768KB, WorkFlash: 512KB, RAM: 2048KB)",   0x114, 0xed06, 254, 32, 96, 512, 254, 32, 96, 512 
+"CYT6BJCDHS/E (320-BGA, 4xCM7, CodeFlash: 16768KB, WorkFlash: 512KB, RAM: 2048KB)",   0x114, 0xed06, 254, 32, 96, 512, 254, 32, 96, 512 
+@
+#====================================== Traveo II - CYT4DN series (TVII-C-2D-6M) ==============================================
+@
+"CYT4DNDBHS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x106, 0xe810, 190, 32, 48, 256
+"CYT4DNJBHS (327-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x106, 0xe820, 190, 32, 48, 256
+@
+#====================================== Traveo II - CYT3DL series (TVII-C-2D-4M) ==============================================
+@
+"CYT3DLBBHS (272-BGA, 1xCM7, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 384KB)",   0x10b, 0xe848, 126, 16, 48, 256
+"CYT3DLABHS (216-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 384KB)", 0x10b, 0xe850, 126, 16, 48, 256
+"CYT3DL9BGS (208-TEQFP, 1xCM7, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 384KB)", 0x10b, 0xe858, 126, 16, 48, 256
+@
+#====================================== Traveo II - CYT2CL series (TVII-C-E-4M) ==============================================
+@
+"CYT2CL8BAS (176-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB)", 0x113, 0xec01, 126, 16, 48, 256
+"CYT2CL7BAS (144-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB)", 0x113, 0xec03, 126, 16, 48, 256
+"CYT2CLHBAS (144-LQFP, CodeFlash: 4160KB, WorkFlash: 128KB, RAM: 512KB)", 0x113, 0xec05, 126, 16, 48, 256
+@
+#====================================== Traveo II - CYT4EN series (TVII-C-2D-6M-DDR) ==============================================
+@
+"CYT4ENDBAS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb01, 190, 32, 48, 256
+"CYT4ENDBCS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb02, 190, 32, 48, 256
+"CYT4ENDBES (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb03, 190, 32, 48, 256
+"CYT4ENDBGS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb04, 190, 32, 48, 256
+"CYT4ENDBJS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb05, 190, 32, 48, 256
+"CYT4ENDBLS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb06, 190, 32, 48, 256
+"CYT4ENDBNS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb07, 190, 32, 48, 256
+"CYT4ENDBQS (500-BGA, 2xCM7, CodeFlash: 6336KB, WorkFlash: 128KB, RAM: 640KB)", 0x10f, 0xeb08, 190, 32, 48, 256
+@
+#====================================== Traveo II - Miscellaneous devices (e.g. PSVP bitfiles) ================================
+@
+"CYT4BF -> refer 002-24435 (176-TEQFP, 2xCM7, CodeFlash: 8384KB, WorkFlash: 256KB, RAM: 1024KB)", 0x103, 0xe501, 254, 32, 96, 512 
+"TVII-B-E-1M (PSVP)",                 0x101, 0xe300,  30, 16, 36, 192
+"TVII-B-E-2M (PSVP)",                 0x104, 0xe600,  62, 16, 48, 256
+"TVII-B-E-2M (empty Silicon-ID)",     0x104, 0xffff,  62, 16, 48, 256
+"TVII-B-H-4M (???)",                  0x107, 0xe900, 126, 16, 96, 512
+"TVII-B-H-8M (PSVP)",                 0x103, 0xe500, 254, 32, 96, 512
+"TVII-B-H-16M (PSVP, Flash #0 only)", 0x114, 0xed00, 254, 32, 96, 512
+"TVII-C-2D-4M (PSVP)",                0x10b, 0xe840, 126, 16, 48, 256
+"TVII-C-2D-6M (PSVP)",                0x106, 0xe800, 190, 32, 48, 256
+"TVII-C-2D-6M-DDR (PSVP)",            0x10f, 0xe800, 190, 32, 48, 256
+@

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sessionSetup>
+<partner><name>Partner0</name><workspace>$WS_PATH$</workspace><project>$PROJ_PATH$</project><config>rev_b</config><numberOfCores>1</numberOfCores></partner>
+<partner><name>Partner1</name><workspace>$WS_DIR$\tviibh8m_sram_cm7_0_mc_template.eww</workspace><project>cm7_0</project><config>rev_b</config><numberOfCores>1</numberOfCores><attachToRunningTarget>true</attachToRunningTarget></partner>
+</sessionSetup>

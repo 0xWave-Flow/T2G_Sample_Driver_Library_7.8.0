@@ -1,0 +1,47 @@
+target_connection {
+     {
+        title = "TVII-B-H-8M - GHS Probe USB"
+        type = "Green Hills Debug Probe (mpserv)"
+        short_type = "mpserv"
+        args = "  -cfgload \"debugging\\tviibh8m.ghpcfg\" -usb 0"
+        command = "mpserv  -cfgload \"debugging\\tviibh8m.ghpcfg\" -usb 0"
+        logfile = ""
+        mode = ""
+        setup_script = ""
+        run_mode_partner = ""
+        run_mode_policy = ""
+        sane = "yes"
+        log = "no"
+        timestamp = "0"
+    }
+     {
+        title = "Simulator CM0+"
+        type = "Simulator for ARM (simarm)"
+        short_type = "simarm"
+        args = " -cpu=cortexm0+ -rom_use_entry -allocmem"
+        command = "simarm -cpu=cortexm0+ -rom_use_entry -allocmem"
+        logfile = ""
+        mode = ""
+        setup_script = ""
+        run_mode_partner = ""
+        run_mode_policy = ""
+        sane = "yes"
+        log = "no"
+        timestamp = "0"
+    }
+     {
+        title = "Simulator CM7"
+        type = "Simulator for ARM (simarm)"
+        short_type = "simarm"
+        args = " -cpu=cortexm7 -fpu -rom_use_entry -allocmem"
+        command = "simarm -cpu=cortexm7 -fpu -rom_use_entry -allocmem"
+        logfile = ""
+        mode = ""
+        setup_script = ""
+        run_mode_partner = ""
+        run_mode_policy = ""
+        sane = "yes"
+        log = "no"
+        timestamp = "0"
+    }
+}

@@ -1,0 +1,15 @@
+#!gbuild
+
+macro BUILD_TARGET=program.gpj
+macro BUILD_CFG_NAME=flash      # Folder name
+macro LINK_LOCATION=flash
+
+[Subproject]
+
+cm0plus.gpj
+cm7_0.gpj
+cm7_1.gpj
+$(BUILD_CFG_NAME)\cm0plus_only.ghsmc
+$(BUILD_CFG_NAME)\cm0plus_with_cm7_0.ghsmc
+$(BUILD_CFG_NAME)\cm0plus_with_cm7_1.ghsmc
+$(BUILD_CFG_NAME)\cm0plus_with_cm7_dual.ghsmc

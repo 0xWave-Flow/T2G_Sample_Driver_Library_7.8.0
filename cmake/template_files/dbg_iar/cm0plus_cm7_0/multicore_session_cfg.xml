@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sessionSetup>
+<partner><name>Partner0</name><workspace>$WS_DIR$/cm0plus.eww</workspace><project>cm0plus</project><config>Debug</config><numberOfCores>1</numberOfCores></partner>
+<partner><name>Partner1</name><workspace>$WS_DIR$/cm7_0.eww</workspace><project>cm7_0</project><config>Debug</config><numberOfCores>1</numberOfCores><attachToRunningTarget>true</attachToRunningTarget></partner>
+</sessionSetup>

@@ -1,0 +1,1225 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "hidden": true,
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "build/${presetName}",
+      "cacheVariables": {
+        "MCU_REV": "latest",
+        "LINK": "flash"        
+      }
+    },
+    {
+      "name": "toolchain-gcc",
+      "hidden": true,
+      "toolchainFile": "${sourceDir}/cmake/toolchains/toolchain-gcc.cmake"
+    },
+    {
+      "name": "toolchain-ghs",
+      "hidden": true,
+      "toolchainFile": "${sourceDir}/cmake/toolchains/toolchain-ghs.cmake"
+    },
+    {
+      "name": "toolchain-iar",
+      "hidden": true,
+      "toolchainFile": "${sourceDir}/cmake/toolchains/toolchain-iar.cmake"
+    },
+    {
+      "name": "toolchain-diab",
+      "hidden": true,
+      "toolchainFile": "${sourceDir}/cmake/toolchains/toolchain-diab.cmake"
+    },
+	
+    {
+      "name": "tviibe1m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibe1m",
+        "BOARD_REV": "CPU_BOARD_REVC"
+      }
+    },
+    {
+      "name": "tviibe1m-sk",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibe1m",
+        "BOARD_REV": "STARTER_KIT_REV3",
+        "DEVICE": "CYT2B75CAE"
+      }
+    },
+    {
+      "name": "tviibe2m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibe2m",
+        "BOARD_REV": "CPU_BOARD_REVC"
+      }
+    },
+    {
+      "name": "tviibe4m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibe4m",
+        "BOARD_REV": "CPU_BOARD_REVC"
+      }
+    },
+    {
+      "name": "tviibe512k",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibe512k",
+        "BOARD_REV": "CPU_BOARD_REVC"
+      }
+    },
+    {
+      "name": "tviibh4m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibh4m",
+        "BOARD_REV": "CPU_BOARD_REVB"
+      }
+    },
+    {
+      "name": "tviibh8m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibh8m"
+      }
+    },
+    {
+      "name": "tviibh16m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviibh16m",
+        "BOARD": "CY_320BGA_EVK_rev_a"
+      }
+    },
+    
+    {
+      "name": "tviic2d4m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviic2d4m"
+      }
+    },
+    {
+      "name": "tviic2d6m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviic2d6m"
+      }
+    },
+    {
+      "name": "tviic2d6mddr",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviic2d6mddr",
+        "BOARD": "CY_500BGA_EVK_rev_a"
+      }
+    },
+    {
+      "name": "tviice4m",
+      "hidden": true,
+      "cacheVariables": {
+        "DIE": "tviice4m",
+        "BOARD": "CY_176LQFP_EVK_REV_A"
+      }
+    },
+
+    
+    {
+      "name": "tviibe1m-gcc",
+      "inherits": [ "default", "tviibe1m", "toolchain-gcc" ],
+      "displayName": "T2G-B-E-1M (GCC)",
+      "description": "Configure T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe1m-sk-gcc",
+      "inherits": [ "default", "tviibe1m-sk", "toolchain-gcc" ],
+      "displayName": "CYTVII-B-E-1M-SK (GCC)",
+      "description": "Configure T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe2m-gcc",
+      "inherits": [ "default", "tviibe2m", "toolchain-gcc" ],
+      "displayName": "T2G-B-E-2M (GCC)",
+      "description": "Configure T2G-B-E-2M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe4m-gcc",
+      "inherits": [ "default", "tviibe4m", "toolchain-gcc" ],
+      "displayName": "T2G-B-E-4M (GCC)",
+      "description": "Configure T2G-B-E-4M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe512k-gcc",
+      "inherits": [ "default", "tviibe512k", "toolchain-gcc" ],
+      "displayName": "T2G-B-E-512K (GCC)",
+      "description": "Configure T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh4m-gcc",
+      "inherits": [ "default", "tviibh4m", "toolchain-gcc" ],
+      "displayName": "T2G-B-H-4M (GCC)",
+      "description": "Configure T2G-B-H-4M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh8m-gcc",
+      "inherits": [ "default", "tviibh8m", "toolchain-gcc" ],
+      "displayName": "T2G-B-H-8M (GCC)",
+      "description": "Configure T2G-B-H-8M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh16m-gcc",
+      "inherits": [ "default", "tviibh16m", "toolchain-gcc" ],
+      "displayName": "T2G-B-H-16M (GCC)",
+      "description": "Configure T2G-B-H-16M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d4m-gcc",
+      "inherits": [ "default", "tviic2d4m", "toolchain-gcc" ],
+      "displayName": "T2G-C-2D-4M (GCC)",
+      "description": "Configure T2G-C-2D-4M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d6m-gcc",
+      "inherits": [ "default", "tviic2d6m", "toolchain-gcc" ],
+      "displayName": "T2G-C-2D-6M (GCC)",
+      "description": "Configure T2G-C-2D-6M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d6mddr-gcc",
+      "inherits": [ "default", "tviic2d6mddr", "toolchain-gcc" ],
+      "displayName": "T2G-C-2D-6M-DDR (GCC)",
+      "description": "Configure T2G-C-2D-6M-DDR (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviice4m-gcc",
+      "inherits": [ "default", "tviice4m", "toolchain-gcc" ],
+      "displayName": "T2G-C-E-4M (GCC)",
+      "description": "Configure T2G-C-E-4M (latest rev, flash linking) using GCC compiler and Ninja Multi-Config generator"
+    },
+
+
+
+
+
+    {
+      "name": "tviibe1m-ghs",
+      "inherits": [ "default", "tviibe1m", "toolchain-ghs" ],
+      "displayName": "T2G-B-E-1M (GHS)",
+      "description": "Configure T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe1m-sk-ghs",
+      "inherits": [ "default", "tviibe1m-sk", "toolchain-ghs" ],
+      "displayName": "CYTVII-B-E-1M-SK (GHS)",
+      "description": "Configure T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe2m-ghs",
+      "inherits": [ "default", "tviibe2m", "toolchain-ghs" ],
+      "displayName": "T2G-B-E-2M (GHS)",
+      "description": "Configure T2G-B-E-2M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe4m-ghs",
+      "inherits": [ "default", "tviibe4m", "toolchain-ghs" ],
+      "displayName": "T2G-B-E-4M (GHS)",
+      "description": "Configure T2G-B-E-4M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe512k-ghs",
+      "inherits": [ "default", "tviibe512k", "toolchain-ghs" ],
+      "displayName": "T2G-B-E-512K (GHS)",
+      "description": "Configure T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh4m-ghs",
+      "inherits": [ "default", "tviibh4m", "toolchain-ghs" ],
+      "displayName": "T2G-B-H-4M (GHS)",
+      "description": "Configure T2G-B-H-4M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh8m-ghs",
+      "inherits": [ "default", "tviibh8m", "toolchain-ghs" ],
+      "displayName": "T2G-B-H-8M (GHS)",
+      "description": "Configure T2G-B-H-8M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh16m-ghs",
+      "inherits": [ "default", "tviibh16m", "toolchain-ghs" ],
+      "displayName": "T2G-B-H-16M (GHS)",
+      "description": "Configure T2G-B-H-16M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d4m-ghs",
+      "inherits": [ "default", "tviic2d4m", "toolchain-ghs" ],
+      "displayName": "T2G-C-2D-4M (GHS)",
+      "description": "Configure T2G-C-2D-4M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d6m-ghs",
+      "inherits": [ "default", "tviic2d6m", "toolchain-ghs" ],
+      "displayName": "T2G-C-2D-6M (GHS)",
+      "description": "Configure T2G-C-2D-6M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d6mddr-ghs",
+      "inherits": [ "default", "tviic2d6mddr", "toolchain-ghs" ],
+      "displayName": "T2G-C-2D-6M-DDR (GHS)",
+      "description": "Configure T2G-C-2D-6M-DDR (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviice4m-ghs",
+      "inherits": [ "default", "tviice4m", "toolchain-ghs" ],
+      "displayName": "T2G-C-E-4M (GHS)",
+      "description": "Configure T2G-C-E-4M (latest rev, flash linking) using GHS compiler and Ninja Multi-Config generator"
+    },
+
+
+
+
+    {
+      "name": "tviibe1m-iar",
+      "inherits": [ "default", "tviibe1m", "toolchain-iar" ],
+      "displayName": "T2G-B-E-1M (IAR)",
+      "description": "Configure T2G-B-E-1M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe1m-sk-iar",
+      "inherits": [ "default", "tviibe1m-sk", "toolchain-iar" ],
+      "displayName": "CYTVII-B-E-1M-SK (IAR)",
+      "description": "Configure T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe2m-iar",
+      "inherits": [ "default", "tviibe2m", "toolchain-iar" ],
+      "displayName": "T2G-B-E-2M (IAR)",
+      "description": "Configure T2G-B-E-2M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe4m-iar",
+      "inherits": [ "default", "tviibe4m", "toolchain-iar" ],
+      "displayName": "T2G-B-E-4M (IAR)",
+      "description": "Configure T2G-B-E-4M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibe512k-iar",
+      "inherits": [ "default", "tviibe512k", "toolchain-iar" ],
+      "displayName": "T2G-B-E-512K (IAR)",
+      "description": "Configure T2G-B-E-512K (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh4m-iar",
+      "inherits": [ "default", "tviibh4m", "toolchain-iar" ],
+      "displayName": "T2G-B-H-4M (IAR)",
+      "description": "Configure T2G-B-H-4M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh8m-iar",
+      "inherits": [ "default", "tviibh8m", "toolchain-iar" ],
+      "displayName": "T2G-B-H-8M (IAR)",
+      "description": "Configure T2G-B-H-8M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviibh16m-iar",
+      "inherits": [ "default", "tviibh16m", "toolchain-iar" ],
+      "displayName": "T2G-B-H-16M (IAR)",
+      "description": "Configure T2G-B-H-16M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d4m-iar",
+      "inherits": [ "default", "tviic2d4m", "toolchain-iar" ],
+      "displayName": "T2G-C-2D-4M (IAR)",
+      "description": "Configure T2G-C-2D-4M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d6m-iar",
+      "inherits": [ "default", "tviic2d6m", "toolchain-iar" ],
+      "displayName": "T2G-C-2D-6M (IAR)",
+      "description": "Configure T2G-C-2D-6M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviic2d6mddr-iar",
+      "inherits": [ "default", "tviic2d6mddr", "toolchain-iar" ],
+      "displayName": "T2G-C-2D-6M-DDR (IAR)",
+      "description": "Configure T2G-C-2D-6M-DDR (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+    {
+      "name": "tviice4m-iar",
+      "inherits": [ "default", "tviice4m", "toolchain-iar" ],
+      "displayName": "T2G-C-E-4M (IAR)",
+      "description": "Configure T2G-C-E-4M (latest rev, flash linking) using IAR compiler and Ninja Multi-Config generator"
+    },
+
+
+	
+    {
+      "name": "tviibe1m-diab",
+      "inherits": [ "default", "tviibe1m", "toolchain-diab" ],
+      "displayName": "T2G-B-E-1M (DIAB)",
+      "description": "Configure T2G-B-E-1M (latest rev, flash linking) using DIAB compiler and Ninja Multi-Config generator"
+    },    
+    {
+      "name": "tviibe1m-sk-diab",
+      "inherits": [ "default", "tviibe1m-sk", "toolchain-diab" ],
+      "displayName": "CYTVII-B-E-1M-SK (DIAB)",
+      "description": "Configure T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using DIAB compiler and Ninja Multi-Config generator"
+    }
+    
+  ],
+
+
+  "buildPresets": [
+    {
+      "name": "default",
+      "hidden": true
+    },
+    {
+      "name": "cfg-debug",
+      "hidden": true,
+      "configuration" : "Debug"
+    },
+    {
+      "name": "cfg-release",
+      "hidden": true,
+      "configuration" : "Release"
+    },
+    {
+      "name": "cfg-relwithdebinfo",
+      "hidden": true,
+      "configuration" : "RelWithDebInfo"
+    },
+	
+    
+
+    {
+      "name": "tviibe1m-gcc",
+      "configurePreset": "tviibe1m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-1M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-gcc",
+      "configurePreset": "tviibe1m-sk-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "CYTVII-B-E-1M-SK (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-gcc",
+      "configurePreset": "tviibe2m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-2M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-2M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-gcc",
+      "configurePreset": "tviibe4m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-4M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-gcc",
+      "configurePreset": "tviibe512k-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-512K (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-gcc",
+      "configurePreset": "tviibh4m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-4M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-gcc",
+      "configurePreset": "tviibh8m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-8M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-8M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-gcc",
+      "configurePreset": "tviibh16m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-16M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-16M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-gcc",
+      "configurePreset": "tviic2d4m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-4M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-gcc",
+      "configurePreset": "tviic2d6m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-6M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-6M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-gcc",
+      "configurePreset": "tviic2d6mddr-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-6M-DDR (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-gcc",
+      "configurePreset": "tviice4m-gcc",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-E-4M (GCC), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-E-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+
+
+    {
+      "name": "tviibe1m-ghs",
+      "configurePreset": "tviibe1m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-1M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-ghs",
+      "configurePreset": "tviibe1m-sk-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "CYTVII-B-E-1M-SK (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-ghs",
+      "configurePreset": "tviibe2m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-2M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-2M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-ghs",
+      "configurePreset": "tviibe4m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-4M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-ghs",
+      "configurePreset": "tviibe512k-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-512K (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-ghs",
+      "configurePreset": "tviibh4m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-4M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-ghs",
+      "configurePreset": "tviibh8m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-8M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-8M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-ghs",
+      "configurePreset": "tviibh16m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-16M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-16M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-ghs",
+      "configurePreset": "tviic2d4m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-4M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-ghs",
+      "configurePreset": "tviic2d6m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-6M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-6M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-ghs",
+      "configurePreset": "tviic2d6mddr-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-6M-DDR (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-ghs",
+      "configurePreset": "tviice4m-ghs",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-E-4M (GHS), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-E-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+
+
+    {
+      "name": "tviibe1m-iar",
+      "configurePreset": "tviibe1m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-1M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-iar",
+      "configurePreset": "tviibe1m-sk-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "CYTVII-B-E-1M-SK (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-iar",
+      "configurePreset": "tviibe2m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-2M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-2M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-iar",
+      "configurePreset": "tviibe4m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-4M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-iar",
+      "configurePreset": "tviibe512k-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-512K (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-512K (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-iar",
+      "configurePreset": "tviibh4m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-4M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-iar",
+      "configurePreset": "tviibh8m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-8M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-8M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-iar",
+      "configurePreset": "tviibh16m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-H-16M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-H-16M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-iar",
+      "configurePreset": "tviic2d4m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-4M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-iar",
+      "configurePreset": "tviic2d6m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-6M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-6M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-iar",
+      "configurePreset": "tviic2d6mddr-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-2D-6M-DDR (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-iar",
+      "configurePreset": "tviice4m-iar",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-C-E-4M (IAR), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-C-E-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+	
+	  {
+      "name": "tviibe1m-diab",
+      "configurePreset": "tviibe1m-diab",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "T2G-B-E-1M (DIAB), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M (latest rev, flash linking) using DIAB compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-diab",
+      "configurePreset": "tviibe1m-sk-diab",
+      "inherits": [ "default", "cfg-debug" ],
+      "displayName": "CYTVII-B-E-1M-SK (DIAB), 'Debug' Cfg",
+      "description": "Build 'Debug' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using DIAB compiler and Ninja"
+    },
+	
+	
+
+    {
+      "name": "tviibe1m-gcc-release",
+      "configurePreset": "tviibe1m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-1M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-gcc-release",
+      "configurePreset": "tviibe1m-sk-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "CYTVII-B-E-1M-SK (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-gcc-release",
+      "configurePreset": "tviibe2m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-2M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-2M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-gcc-release",
+      "configurePreset": "tviibe4m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-4M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-gcc-release",
+      "configurePreset": "tviibe512k-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-512K (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-gcc-release",
+      "configurePreset": "tviibh4m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-4M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-gcc-release",
+      "configurePreset": "tviibh8m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-8M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-8M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-gcc-release",
+      "configurePreset": "tviibh16m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-16M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-16M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-gcc-release",
+      "configurePreset": "tviic2d4m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-4M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-gcc-release",
+      "configurePreset": "tviic2d6m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-6M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-6M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-gcc-release",
+      "configurePreset": "tviic2d6mddr-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-6M-DDR (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-gcc-release",
+      "configurePreset": "tviice4m-gcc",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-E-4M (GCC), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-E-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+
+
+    {
+      "name": "tviibe1m-ghs-release",
+      "configurePreset": "tviibe1m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-1M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-ghs-release",
+      "configurePreset": "tviibe1m-sk-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "CYTVII-B-E-1M-SK (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-ghs-release",
+      "configurePreset": "tviibe2m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-2M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-2M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-ghs-release",
+      "configurePreset": "tviibe4m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-4M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-ghs-release",
+      "configurePreset": "tviibe512k-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-512K (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-ghs-release",
+      "configurePreset": "tviibh4m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-4M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-ghs-release",
+      "configurePreset": "tviibh8m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-8M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-8M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-ghs-release",
+      "configurePreset": "tviibh16m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-16M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-16M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-ghs-release",
+      "configurePreset": "tviic2d4m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-4M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-ghs-release",
+      "configurePreset": "tviic2d6m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-6M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-6M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-ghs-release",
+      "configurePreset": "tviic2d6mddr-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-6M-DDR (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-ghs-release",
+      "configurePreset": "tviice4m-ghs",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-E-4M (GHS), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-E-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+	
+
+    {
+      "name": "tviibe1m-iar-release",
+      "configurePreset": "tviibe1m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-1M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-iar-release",
+      "configurePreset": "tviibe1m-sk-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "CYTVII-B-E-1M-SK (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-iar-release",
+      "configurePreset": "tviibe2m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-2M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-2M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-iar-release",
+      "configurePreset": "tviibe4m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-4M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-iar-release",
+      "configurePreset": "tviibe512k-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-512K (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-512K (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-iar-release",
+      "configurePreset": "tviibh4m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-4M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-iar-release",
+      "configurePreset": "tviibh8m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-8M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-8M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-iar-release",
+      "configurePreset": "tviibh16m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-H-16M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-H-16M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-iar-release",
+      "configurePreset": "tviic2d4m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-4M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-iar-release",
+      "configurePreset": "tviic2d6m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-6M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-6M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-iar-release",
+      "configurePreset": "tviic2d6mddr-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-2D-6M-DDR (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-iar-release",
+      "configurePreset": "tviice4m-iar",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-C-E-4M (IAR), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-C-E-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+
+    {
+      "name": "tviibe1m-diab-release",
+      "configurePreset": "tviibe1m-diab",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "T2G-B-E-1M (DIAB), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M (latest rev, flash linking) using DIAB compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-diab-release",
+      "configurePreset": "tviibe1m-sk-diab",
+      "inherits": [ "default", "cfg-release" ],
+      "displayName": "CYTVII-B-E-1M-SK (DIAB), 'Release' Cfg",
+      "description": "Build 'Release' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using DIAB compiler and Ninja"
+    },
+
+
+    {
+      "name": "tviibe1m-gcc-relwithdebinfo",
+      "configurePreset": "tviibe1m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-1M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-gcc-relwithdebinfo",
+      "configurePreset": "tviibe1m-sk-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "CYTVII-B-E-1M-SK (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-gcc-relwithdebinfo",
+      "configurePreset": "tviibe2m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-2M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-2M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-gcc-relwithdebinfo",
+      "configurePreset": "tviibe4m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-4M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-gcc-relwithdebinfo",
+      "configurePreset": "tviibe512k-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-512K (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-gcc-relwithdebinfo",
+      "configurePreset": "tviibh4m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-4M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-gcc-relwithdebinfo",
+      "configurePreset": "tviibh8m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-8M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-8M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-gcc-relwithdebinfo",
+      "configurePreset": "tviibh16m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-16M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-16M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-gcc-relwithdebinfo",
+      "configurePreset": "tviic2d4m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-4M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-gcc-relwithdebinfo",
+      "configurePreset": "tviic2d6m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-6M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-6M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-gcc-relwithdebinfo",
+      "configurePreset": "tviic2d6mddr-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-6M-DDR (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-gcc-relwithdebinfo",
+      "configurePreset": "tviice4m-gcc",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-E-4M (GCC), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-E-4M (latest rev, flash linking) using GCC compiler and Ninja"
+    },
+
+
+    {
+      "name": "tviibe1m-ghs-relwithdebinfo",
+      "configurePreset": "tviibe1m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-1M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-ghs-relwithdebinfo",
+      "configurePreset": "tviibe1m-sk-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "CYTVII-B-E-1M-SK (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-ghs-relwithdebinfo",
+      "configurePreset": "tviibe2m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-2M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-2M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-ghs-relwithdebinfo",
+      "configurePreset": "tviibe4m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-4M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-ghs-relwithdebinfo",
+      "configurePreset": "tviibe512k-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-512K (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-ghs-relwithdebinfo",
+      "configurePreset": "tviibh4m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-4M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-ghs-relwithdebinfo",
+      "configurePreset": "tviibh8m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-8M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-8M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-ghs-relwithdebinfo",
+      "configurePreset": "tviibh16m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-16M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-16M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-ghs-relwithdebinfo",
+      "configurePreset": "tviic2d4m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-4M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-ghs-relwithdebinfo",
+      "configurePreset": "tviic2d6m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-6M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-6M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-ghs-relwithdebinfo",
+      "configurePreset": "tviic2d6mddr-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-6M-DDR (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-ghs-relwithdebinfo",
+      "configurePreset": "tviice4m-ghs",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-E-4M (GHS), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-E-4M (latest rev, flash linking) using GHS compiler and Ninja"
+    },
+
+
+    {
+      "name": "tviibe1m-iar-relwithdebinfo",
+      "configurePreset": "tviibe1m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-1M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-iar-relwithdebinfo",
+      "configurePreset": "tviibe1m-sk-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "CYTVII-B-E-1M-SK (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe2m-iar-relwithdebinfo",
+      "configurePreset": "tviibe2m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-2M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-2M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe4m-iar-relwithdebinfo",
+      "configurePreset": "tviibe4m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-4M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibe512k-iar-relwithdebinfo",
+      "configurePreset": "tviibe512k-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-512K (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-512K (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh4m-iar-relwithdebinfo",
+      "configurePreset": "tviibh4m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-4M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh8m-iar-relwithdebinfo",
+      "configurePreset": "tviibh8m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-8M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-8M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviibh16m-iar-relwithdebinfo",
+      "configurePreset": "tviibh16m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-H-16M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-H-16M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d4m-iar-relwithdebinfo",
+      "configurePreset": "tviic2d4m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-4M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6m-iar-relwithdebinfo",
+      "configurePreset": "tviic2d6m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-6M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-6M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviic2d6mddr-iar-relwithdebinfo",
+      "configurePreset": "tviic2d6mddr-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-2D-6M-DDR (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-2D-6M-DDR (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+    {
+      "name": "tviice4m-iar-relwithdebinfo",
+      "configurePreset": "tviice4m-iar",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-C-E-4M (IAR), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-C-E-4M (latest rev, flash linking) using IAR compiler and Ninja"
+    },
+	
+	
+    {
+      "name": "tviibe1m-diab-relwithdebinfo",
+      "configurePreset": "tviibe1m-diab",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "T2G-B-E-1M (DIAB), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M (latest rev, flash linking) using DIAB compiler and Ninja"
+    },
+    {
+      "name": "tviibe1m-sk-diab-relwithdebinfo",
+      "configurePreset": "tviibe1m-sk-diab",
+      "inherits": [ "default", "cfg-relwithdebinfo" ],
+      "displayName": "CYTVII-B-E-1M-SK (DIAB), 'Release w/ Debug Info' Cfg",
+      "description": "Build 'Release w/ Debug Info' configuration of T2G-B-E-1M Starter Kit 'CYTVII-B-E-1M-SK' (latest rev, flash linking) using DIAB compiler and Ninja"
+    }
+
+  ]
+}

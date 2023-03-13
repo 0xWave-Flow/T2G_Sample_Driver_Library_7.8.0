@@ -1,0 +1,2 @@
+/usr/bin/ar qc librtos_cm7.a CMakeFiles/rtos_cm7.dir/common/src/rtos/croutine.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/event_groups.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/list.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/queue.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/stream_buffer.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/tasks.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/timers.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/portable/MemMang/heap_4.c.o CMakeFiles/rtos_cm7.dir/common/src/rtos/portable/GCC/ARM_CM7/r0p1/port.c.o
+/usr/bin/ranlib librtos_cm7.a

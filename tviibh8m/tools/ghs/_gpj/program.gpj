@@ -1,0 +1,30 @@
+#!gbuild
+
+macro PROGRAM_FILE_NAME_NO_EXT=$(CPU_NAME)$(CPU_INSTANCE_SUFFIX)
+macro PROGRAM_FILE_NAME=$(PROGRAM_FILE_NAME_NO_EXT).elf
+macro BIN_DIR_FROM_TOP_GPJ=$(BUILD_CFG_NAME)\$(CPU_NAME)$(CPU_INSTANCE_SUFFIX)
+
+[Program]
+
+                                -D_LINK_$(LINK_LOCATION)_                    # Used for pre-processing of linker script
+                                -D_CORE_$(CPU_NAME)$(CPU_INSTANCE_SUFFIX)_   # Used for pre-processing of linker script
+                                -o $(PROGRAM_FILE_NAME)
+                                -object_dir=$(BIN_DIR_FROM_TOP_GPJ)\objs
+                                :binDir=$(BIN_DIR_FROM_TOP_GPJ)
+                                :postexec='gsrec $(OUTPUTFILE) -o $(OUTPUTFILE).srec -bytes 16'
+                                -L..\$(SERIES_FOLDER_REL_PATH)\src\drivers\crypto\libs
+  { streq(CPU_NAME, "cm0plus")} -lcrypto_server_$(CPU_NAME)_ghs 
+  {!streq(CPU_NAME, "cm0plus")} -lcrypto_client_$(CPU_NAME)_ghs  
+                                -L..\libsdl\$(CPU_NAME)
+                                -lsdl_$(CPU_NAME)
+                                -L..\libmw\$(CPU_NAME)
+                                -lmw_$(CPU_NAME)
+  {!streq(CPU_NAME, "cm0plus")} -L..\librtos\$(CPU_NAME)
+  {!streq(CPU_NAME, "cm0plus")} -lrtos_$(CPU_NAME)
+  {!streq(CPU_NAME, "cm0plus") && isdefined(USE_ETHSTACK)} -L..\libethstack\$(CPU_NAME)
+  {!streq(CPU_NAME, "cm0plus") && isdefined(USE_ETHSTACK)} -lethstack_$(CPU_NAME)
+    
+source.gpj
+memory_map.ld
+linker_directives.ld
+$(BIN_DIR_FROM_TOP_GPJ)\$(PROGRAM_FILE_NAME_NO_EXT).map

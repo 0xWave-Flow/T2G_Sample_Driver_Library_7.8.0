@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarUserArgVars>
+    <group name="CUSTOM_VARS" active="true">
+        <variable>
+            <name>LINK_LOCATION</name>
+            <value>sram</value>
+        </variable>
+        <variable>
+            <name>MULTICORE_DEBUG_SLAVE_WORKSPACE</name>
+            <value>tviibh8m_sram_cm7_0_mc_template.eww</value>
+        </variable>        
+    </group>
+</iarUserArgVars>

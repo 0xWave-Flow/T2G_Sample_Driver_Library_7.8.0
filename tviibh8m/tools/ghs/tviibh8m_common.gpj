@@ -1,0 +1,27 @@
+#!gbuild
+macro DIE=tviibh8m
+macro SERIES=cyt4bf
+#macro DEVICE=CYT4BF8CDE   # 176-TEQFP
+macro DEVICE=CYT4BFCCHE   # 320-BGA
+
+macro SERIES_FOLDER_REL_PATH=..\..
+macro COMMON_FOLDER_REL_PATH=..\..\..\common
+macro RTOS_PORT_PATH=GHS\ARM_CM7\r0p1
+
+# Additional project components -> Comment to exclude or uncomment to include
+#macro USE_ETHSTACK=      # Ethernet stack
+
+[Project]
+    :optionsFile=options_global.opt
+    
+_gpj/flash.gpj
+_gpj/sram.gpj
+_gpj/libmw_top.gpj
+_gpj/libsdl_top.gpj
+_gpj/librtos_top.gpj
+{isdefined(USE_ETHSTACK)}_gpj/libethstack_top.gpj
+{isdefined(BUILD_CRYPTO_LIBS)}_gpj/libcrypto_top.gpj
+_gpj/debugging.gpj
+options_global.opt
+options_cm0plus.opt
+options_cm7.opt

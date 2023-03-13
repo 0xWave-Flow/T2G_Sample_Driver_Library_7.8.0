@@ -1,0 +1,11 @@
+#!gbuild
+
+macro MCU_REV=rev_d
+macro USE_PSVP=0
+
+primaryTarget=arm_standalone.tgt
+#component top_level_project
+
+[Project]
+tviibh8m_common.gpj
+

@@ -1,0 +1,56 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+// Variables used across the sample
+variables
+{
+  message 0x100 msg1;
+  message 0x200 msg2;
+  
+  timer timer1;
+}
+
+// Start the timer on 't' key press and configure a CANFD message
+on key 't'
+{
+  msg2.dlc = 16;
+  msg2.fdf = 1; // To enable CANFD
+  
+  // Initializes a 1-second cyclic timer
+  setTimer(timer1, 1);
+}
+
+// Sends a CANFD message upon 'a' key press
+on key 'a'
+{
+  word i = 0;
+  
+  msg1.dlc = 16;
+  msg1.fdf = 1; // To enable CANFD
+  
+  for( i=0; i<16; i++)
+  {
+    msg1.byte(i) = i;
+  }
+    
+  output(msg1);
+  write("message sent");
+}
+// 1 Second cyclic timer
+on timer timer1
+{
+  // Populate the message to send
+  msg2.byte(0) = 0xab;
+  msg2.byte(1) = 0xbc;
+  msg2.byte(2) = 0xcd;
+  msg2.byte(3) = 0xde;
+  msg2.byte(4) = 0xef;  
+  output(msg2); // send message while key is pressed
+  
+  // Re-initialize the 1-second cyclic timer
+  setTimer(timer1, 1);
+}
+

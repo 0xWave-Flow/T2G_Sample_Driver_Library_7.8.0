@@ -1,0 +1,12 @@
+#!gbuild
+
+macro LIBRARY_NAME=libmw_$(CPU_NAME)$(CPU_INSTANCE_SUFFIX).a
+macro BIN_DIR_FROM_TOP_GPJ=libmw\$(CPU_NAME)$(CPU_INSTANCE_SUFFIX)
+
+[Library]
+
+    -o $(LIBRARY_NAME)
+    -object_dir=$(BIN_DIR_FROM_TOP_GPJ)\objs
+    :binDir=$(BIN_DIR_FROM_TOP_GPJ)
+
+libmw_source.gpj

@@ -1,0 +1,136 @@
+
+
+LIN_description_file;
+LIN_protocol_version = "2.2";
+LIN_language_version = "2.2";
+LIN_speed = 20 kbps;
+
+Nodes {
+  Master: LIN_Master, 10 ms, 0.1 ms ;
+  Slaves: Slave_1 ;
+}
+
+Signals {
+  Slave2Master_DATA0: 8, 0, Slave_1, LIN_Master ;
+  Master2Slave_NewSignal: 8, {165}, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA0: 8, 1, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA1: 8, 2, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA2: 8, 3, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA3: 8, 4, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA4: 8, 5, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA5: 8, 6, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA6: 8, 7, LIN_Master, Slave_1 ;
+  Master2Slave_1_DATA7: 8, 8, LIN_Master, Slave_1 ;
+  Slave2Master_2_DATA0: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA1: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA2: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA3: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA4: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA5: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA6: 8, 0, Slave_1, LIN_Master ;
+  Slave2Master_DATA7: 8, 0, Slave_1, LIN_Master ;
+}
+
+Diagnostic_signals {
+  MasterReqB0: 8, 0 ;
+  MasterReqB1: 8, 0 ;
+  MasterReqB2: 8, 0 ;
+  MasterReqB3: 8, 0 ;
+  MasterReqB4: 8, 0 ;
+  MasterReqB5: 8, 0 ;
+  MasterReqB6: 8, 0 ;
+  MasterReqB7: 8, 0 ;
+  SlaveRespB0: 8, 0 ;
+  SlaveRespB1: 8, 0 ;
+  SlaveRespB2: 8, 0 ;
+  SlaveRespB3: 8, 0 ;
+  SlaveRespB4: 8, 0 ;
+  SlaveRespB5: 8, 0 ;
+  SlaveRespB6: 8, 0 ;
+  SlaveRespB7: 8, 0 ;
+}
+
+
+
+Frames {
+  Slave2Master_1: 1, Slave_1, 8 {
+    Slave2Master_DATA0, 0 ;
+    Slave2Master_DATA1, 8 ;
+    Slave2Master_DATA2, 16 ;
+    Slave2Master_DATA3, 24 ;
+    Slave2Master_DATA4, 32 ;
+    Slave2Master_DATA5, 40 ;
+    Slave2Master_DATA6, 48 ;
+    Slave2Master_DATA7, 56 ;
+  }
+  Master2Slave_2: 17, LIN_Master, 1 {
+    Master2Slave_NewSignal, 0 ;
+  }
+  Master2Slave_1: 2, LIN_Master, 8 {
+    Master2Slave_1_DATA0, 0 ;
+    Master2Slave_1_DATA1, 8 ;
+    Master2Slave_1_DATA2, 16 ;
+    Master2Slave_1_DATA3, 24 ;
+    Master2Slave_1_DATA4, 32 ;
+    Master2Slave_1_DATA5, 40 ;
+    Master2Slave_1_DATA6, 48 ;
+    Master2Slave_1_DATA7, 56 ;
+  }
+  Slave2Master_2: 16, Slave_1, 1 {
+    Slave2Master_2_DATA0, 0 ;
+  }
+}
+
+
+
+Diagnostic_frames {
+  MasterReq: 0x3c {
+    MasterReqB0, 0 ;
+    MasterReqB1, 8 ;
+    MasterReqB2, 16 ;
+    MasterReqB3, 24 ;
+    MasterReqB4, 32 ;
+    MasterReqB5, 40 ;
+    MasterReqB6, 48 ;
+    MasterReqB7, 56 ;
+  }
+  SlaveResp: 0x3d {
+    SlaveRespB0, 0 ;
+    SlaveRespB1, 8 ;
+    SlaveRespB2, 16 ;
+    SlaveRespB3, 24 ;
+    SlaveRespB4, 32 ;
+    SlaveRespB5, 40 ;
+    SlaveRespB6, 48 ;
+    SlaveRespB7, 56 ;
+  }
+}
+
+Node_attributes {
+  Slave_1{
+    LIN_protocol = "2.2" ;
+    configured_NAD = 0xFF ;
+    initial_NAD = 0xFF ;
+    product_id = 0x0, 0x0, 255 ;
+    P2_min = 50 ms ;
+    ST_min = 0 ms ;
+    N_As_timeout = 1000 ms ;
+    N_Cr_timeout = 1000 ms ;
+    configurable_frames {
+      Slave2Master_1 ;
+      Slave2Master_2 ;
+    }
+  }
+}
+
+Schedule_tables {
+ MainTable {
+    Slave2Master_1 delay 30 ms ;
+    Slave2Master_2 delay 30 ms ;
+    Master2Slave_1 delay 30 ms ;
+    Master2Slave_2 delay 30 ms ;
+  }
+}
+
+
+

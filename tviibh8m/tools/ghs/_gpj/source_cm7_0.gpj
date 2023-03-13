@@ -1,0 +1,5 @@
+#!gbuild
+
+[Subproject]
+# Add source files here that shall only be built for the respective CPU core
+

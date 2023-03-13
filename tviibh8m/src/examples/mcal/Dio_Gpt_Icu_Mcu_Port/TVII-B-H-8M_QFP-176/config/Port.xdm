@@ -1,0 +1,2298 @@
+<?xml version='1.0'?>
+<datamodel version="7.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/16/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/16/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="Port" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="Port" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_T40D13M1I0R0/Port"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:lst name="PortConfigSet" type="MAP">
+                <d:ctr name="PortConfigSet_0" type="IDENTIFIABLE">
+                  <d:ref name="PortTriggerReference" type="REFERENCE" 
+                         value="ASPath:/Port/Port/PortTriggerConfigSet_0"/>
+                  <d:lst name="PortContainer" type="MAP">
+                    <d:ctr name="P2" type="IDENTIFIABLE">
+                      <d:var name="PortNumberOfPortPins" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="PortId" type="INTEGER" value="2"/>
+                      <d:var name="PortSmartioClockSource" type="ENUMERATION" 
+                             value="PORT_SMART_CLK_SRC_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioHoldOverrideEnable" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioPipelineEnable" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioEnable" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr0Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr1Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr2Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData0Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData1Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitBitSize" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitOperation" 
+                             type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitSource" type="INTEGER" 
+                             value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:lst name="PortPin" type="MAP">
+                        <d:ctr name="SWJ_TRSTN" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="16">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P002_0"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="CPUSS_SWJ_TRSTN"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_HIGH"/>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_PULLUP"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                    <d:ctr name="P3" type="IDENTIFIABLE">
+                      <d:var name="PortNumberOfPortPins" type="INTEGER" 
+                             value="4"/>
+                      <d:var name="PortId" type="INTEGER" value="3"/>
+                      <d:var name="PortSmartioClockSource" type="ENUMERATION" 
+                             value="PORT_SMART_CLK_SRC_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioHoldOverrideEnable" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioPipelineEnable" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioEnable" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr0Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr1Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr2Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData0Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData1Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitBitSize" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitOperation" 
+                             type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitSource" type="INTEGER" 
+                             value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:lst name="PortPin" type="MAP">
+                        <d:ctr name="CB_LED_1" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="26">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P003_2"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT"/>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="GPIO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_STRONG"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="CB_LED_2" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="27">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P003_3"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT"/>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="GPIO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_STRONG"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="CB_BUTTON_1" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="28">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P003_4"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="GPIO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW"/>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_PULLUP"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="CB_BUTTON_2" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="29"/>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P003_5"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="GPIO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW"/>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_PULLUP"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                    <d:ctr name="P6" type="IDENTIFIABLE">
+                      <d:var name="PortNumberOfPortPins" type="INTEGER" 
+                             value="2"/>
+                      <d:var name="PortId" type="INTEGER" value="6"/>
+                      <d:var name="PortSmartioClockSource" type="ENUMERATION" 
+                             value="PORT_SMART_CLK_SRC_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioHoldOverrideEnable" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioPipelineEnable" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioEnable" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr0Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr1Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr2Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData0Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData1Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitBitSize" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitOperation" 
+                             type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitSource" type="INTEGER" 
+                             value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:lst name="PortPin" type="MAP">
+                        <d:ctr name="UART_RX" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="48">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P006_0"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="SCB_4_UART_RX"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_PULLUP"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="UART_TX" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="49">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P006_1"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT"/>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="SCB_4_UART_TX"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_STRONG"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                    <d:ctr name="P13" type="IDENTIFIABLE">
+                      <d:var name="PortNumberOfPortPins" type="INTEGER" 
+                             value="2"/>
+                      <d:var name="PortId" type="INTEGER" value="13"/>
+                      <d:var name="PortSmartioClockSource" type="ENUMERATION" 
+                             value="PORT_SMART_CLK_SRC_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioHoldOverrideEnable" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioPipelineEnable" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioEnable" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr0Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr1Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr2Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData0Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData1Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitBitSize" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitOperation" 
+                             type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitSource" type="INTEGER" 
+                             value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:lst name="PortPin" type="MAP">
+                        <d:ctr name="UART_RX_OLD" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="104">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P013_0"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="SCB_3_UART_RX"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_PULLUP"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="UART_TX_OLD" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="105">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P013_1"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT"/>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="SCB_3_UART_TX"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_STRONG"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                    <d:ctr name="P21" type="IDENTIFIABLE">
+                      <d:var name="PortNumberOfPortPins" type="INTEGER" 
+                             value="1"/>
+                      <d:var name="PortId" type="INTEGER" value="21"/>
+                      <d:var name="PortSmartioClockSource" type="ENUMERATION" 
+                             value="PORT_SMART_CLK_SRC_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioHoldOverrideEnable" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioPipelineEnable" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioEnable" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr0Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr1Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr2Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData0Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData1Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitBitSize" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitOperation" 
+                             type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitSource" type="INTEGER" 
+                             value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:lst name="PortPin" type="MAP">
+                        <d:ctr name="CB_BUTTON_3" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="172">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P021_4"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="GPIO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW"/>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_PULLUP"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                    <d:ctr name="P23" type="IDENTIFIABLE">
+                      <d:var name="PortNumberOfPortPins" type="INTEGER" 
+                             value="4"/>
+                      <d:var name="PortId" type="INTEGER" value="23"/>
+                      <d:var name="PortSmartioClockSource" type="ENUMERATION" 
+                             value="PORT_SMART_CLK_SRC_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioHoldOverrideEnable" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioPipelineEnable" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioEnable" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr0Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr1Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitTr2Source" 
+                             type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData0Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitData1Source" 
+                             type="ENUMERATION" 
+                             value="PORT_SMART_DU_DATA_CONST0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitBitSize" type="INTEGER" 
+                             value="1">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitOperation" 
+                             type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortSmartioDataUnitSource" type="INTEGER" 
+                             value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:lst name="PortPin" type="MAP">
+                        <d:ctr name="SWJ_SWO_TDO" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="188">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P023_4"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT"/>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="CPUSS_SWJ_SWO_TDO"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_STRONG"/>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="SWJ_SWCLK_TCLK" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="189"/>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P023_5"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="CPUSS_SWJ_SWCLK_TCLK"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_HIGHZ">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="SWJ_SWDIO_TMS" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="190">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P023_6"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="CPUSS_SWJ_SWDIO_TMS"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_HIGHZ">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                        <d:ctr name="SWJ_SWDOE_TDI" type="IDENTIFIABLE">
+                          <d:var name="PortPinId" type="INTEGER" value="191"/>
+                          <d:var name="PortPinName" type="ENUMERATION" 
+                                 value="P023_7"/>
+                          <d:var name="PortPinDirection" type="ENUMERATION" 
+                                 value="PORT_PIN_IN">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortPinDirectionChangeable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputInBufEnable" type="BOOLEAN" 
+                                 value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                                 value="CPUSS_SWJ_SWDOE_TDI"/>
+                          <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:lst name="PortPinMode">
+                            <d:var type="ENUMERATION" value="GPIO">
+                              <a:a name="IMPORTER_INFO">
+                                <a:v>@DEF</a:v>
+                                <a:v>@CALC</a:v>
+                              </a:a>
+                            </d:var>
+                          </d:lst>
+                          <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                                 value="PORT_PIN_LEVEL_LOW">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDrive" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_MODE_HIGHZ">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioBypassEnable" 
+                                 type="BOOLEAN" value="true">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncIoEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioSyncChipEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr0Source" 
+                                 type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr1Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutTr2Source" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_TR_LUT0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLut" type="INTEGER" 
+                                 value="0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinSmartioLutOperation" 
+                                 type="ENUMERATION" 
+                                 value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_IN_MODE_CMOS">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlowSlewRateEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveStrength" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_FULL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="Port5VPinInputBufferMode" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveSelectTrim" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_TRIM_DEFAULT">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputSlewExt" type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortPinOutputDriveExt" 
+                                 type="ENUMERATION" 
+                                 value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="PortAmuxSplitCell" type="MAP">
+                    <d:ctr name="PortAmuxSplitCell_0" type="IDENTIFIABLE">
+                      <d:var name="PortAmuxSplitCellId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="PortAmuxBusaSwitchSL" type="ENUMERATION" 
+                             value="PORT_AMUX_SWITCH_OPEN">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortAmuxBusaSwitchSR" type="ENUMERATION" 
+                             value="PORT_AMUX_SWITCH_OPEN">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortAmuxBusaSwitchS0" type="ENUMERATION" 
+                             value="PORT_AMUX_SWITCH_OPEN">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortAmuxBusbSwitchSL" type="ENUMERATION" 
+                             value="PORT_AMUX_SWITCH_OPEN">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortAmuxBusbSwitchSR" type="ENUMERATION" 
+                             value="PORT_AMUX_SWITCH_OPEN">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="PortAmuxBusbSwitchS0" type="ENUMERATION" 
+                             value="PORT_AMUX_SWITCH_OPEN">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                  </d:lst>
+                </d:ctr>
+              </d:lst>
+              <d:ctr name="PortGeneral" type="IDENTIFIABLE">
+                <d:var name="PortDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PortSetPinDirectionApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PortSetPinModeApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PortVersionInfoApi" type="BOOLEAN" value="true"/>
+                <d:var name="PortSafetyFunctionApi" type="BOOLEAN" value="true"/>
+                <d:var name="PortSetToDioAlternateModeApi" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PortSetTriggerApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PortTriggerCommandApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PortErrorCalloutFunction" type="FUNCTION-NAME" 
+                       value="ErrorCalloutHandler">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:lst name="PortIncludeFile">
+                  <d:var type="STRING" value="ErrorCalloutHandler.h">
+                    <a:a name="IMPORTER_INFO" value="@DEF"/>
+                  </d:var>
+                </d:lst>
+              </d:ctr>
+              <d:ctr name="PortDefaultConfigSet" type="IDENTIFIABLE">
+                <d:lst name="PortDefaultContainer" type="MAP">
+                  <d:ctr name="PortDefaultContainer_0" type="IDENTIFIABLE">
+                    <d:var name="PortDefSmartioClockSource" type="ENUMERATION" 
+                           value="PORT_SMART_CLK_SRC_CONST0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioHoldOverrideEnable" 
+                           type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioPipelineEnable" type="BOOLEAN" 
+                           value="true">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitTr0Source" 
+                           type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitTr1Source" 
+                           type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitTr2Source" 
+                           type="ENUMERATION" value="PORT_SMART_DU_TR_CONST0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitData0Source" 
+                           type="ENUMERATION" value="PORT_SMART_DU_DATA_CONST0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitData1Source" 
+                           type="ENUMERATION" value="PORT_SMART_DU_DATA_CONST0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitBitSize" type="INTEGER" 
+                           value="1">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitOperation" 
+                           type="ENUMERATION" value="PORT_SMART_DU_OPC_INCR">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefSmartioDataUnitSource" type="INTEGER" 
+                           value="0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:lst name="PortDefaultPin" type="MAP">
+                      <d:ctr name="PortDefaultPin_0" type="IDENTIFIABLE">
+                        <d:var name="PortDefPinDirection" type="ENUMERATION" 
+                               value="PORT_PIN_IN">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@DEF</a:v>
+                            <a:v>@CALC</a:v>
+                          </a:a>
+                        </d:var>
+                        <d:var name="PortDefPinDirectionChangeable" 
+                               type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputInBufEnable" 
+                               type="BOOLEAN" value="false"/>
+                        <d:var name="PortDefPinInitialMode" type="ENUMERATION" 
+                               value="GPIO">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinModeChangeable" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinLevelValue" type="ENUMERATION" 
+                               value="PORT_PIN_LEVEL_LOW">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputDrive" type="ENUMERATION" 
+                               value="PORT_PIN_OUT_MODE_HIGHZ">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioBypassEnable" 
+                               type="BOOLEAN" value="true">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioSyncIoEnable" 
+                               type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioSyncChipEnable" 
+                               type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioLutTr0Source" 
+                               type="ENUMERATION" value="PORT_SMART_LUT_TR_DU">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioLutTr1Source" 
+                               type="ENUMERATION" value="PORT_SMART_LUT_TR_LUT0">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioLutTr2Source" 
+                               type="ENUMERATION" value="PORT_SMART_LUT_TR_LUT0">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioLut" type="INTEGER" 
+                               value="0">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinSmartioLutOperation" 
+                               type="ENUMERATION" 
+                               value="PORT_SMART_LUT_OPC_COM_OUT_NO_FB">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinInputBufferMode" 
+                               type="ENUMERATION" value="PORT_PIN_IN_MODE_CMOS">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputSlowSlewRateEnable" 
+                               type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputDriveStrength" 
+                               type="ENUMERATION" 
+                               value="PORT_PIN_OUT_STRENGTH_FULL">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDef5VPinInputBufferMode" 
+                               type="ENUMERATION" 
+                               value="PORT_PIN_5V_IN_MODE_CMOS_OR_TTL">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputDriveSelectTrim" 
+                               type="ENUMERATION" 
+                               value="PORT_PIN_OUT_TRIM_DEFAULT">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputSlewExt" 
+                               type="ENUMERATION" 
+                               value="PORT_PIN_OUT_SLEW_EXT_FAST">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortDefPinOutputDriveExt" 
+                               type="ENUMERATION" 
+                               value="PORT_PIN_OUT_STRENGTH_EXT_0">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                </d:lst>
+                <d:lst name="PortDefaultAmuxSplitCell" type="MAP">
+                  <d:ctr name="PortDefaultAmuxSplitCell_0" type="IDENTIFIABLE">
+                    <d:var name="PortDefAmuxBusaSwitchSL" type="ENUMERATION" 
+                           value="PORT_AMUX_SWITCH_OPEN">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefAmuxBusaSwitchSR" type="ENUMERATION" 
+                           value="PORT_AMUX_SWITCH_OPEN">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefAmuxBusaSwitchS0" type="ENUMERATION" 
+                           value="PORT_AMUX_SWITCH_OPEN">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefAmuxBusbSwitchSL" type="ENUMERATION" 
+                           value="PORT_AMUX_SWITCH_OPEN">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefAmuxBusbSwitchSR" type="ENUMERATION" 
+                           value="PORT_AMUX_SWITCH_OPEN">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PortDefAmuxBusbSwitchS0" type="ENUMERATION" 
+                           value="PORT_AMUX_SWITCH_OPEN">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                  </d:ctr>
+                </d:lst>
+              </d:ctr>
+              <d:lst name="PortTriggerConfigSet" type="MAP">
+                <d:ctr name="PortTriggerConfigSet_0" type="IDENTIFIABLE">
+                  <d:var name="PortTriggerConfigSetId" type="INTEGER" value="0">
+                    <a:a name="IMPORTER_INFO">
+                      <a:v>@CALC</a:v>
+                      <a:v>@DEF</a:v>
+                    </a:a>
+                  </d:var>
+                  <d:lst name="PortTrGroupContainer" type="MAP">
+                    <d:ctr name="PortTrGroupContainer_0" type="IDENTIFIABLE">
+                      <d:var name="PortTrGroupId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="PortTrGroupName" type="ENUMERATION" 
+                             value="PDMA0_TR_0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@CALC</a:v>
+                          <a:v>@DEF</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:lst name="PortOutputTrigger" type="MAP">
+                        <d:ctr name="PortOutputTrigger_0" type="IDENTIFIABLE">
+                          <d:var name="PortTrOutputName" type="ENUMERATION" 
+                                 value="CPUSS_DW0_TR_IN_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortTrInputName" type="ENUMERATION" 
+                                 value="CPUSS_ZERO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@DEF</a:v>
+                              <a:v>@CALC</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortTrInvertEnable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortTrSensitiveType" type="ENUMERATION" 
+                                 value="PORT_TR_SENSITIVE_LEVEL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortTrDbgFreezeEnable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="PortTr1To1GroupContainer" type="MAP">
+                    <d:ctr name="PortTr1To1GroupContainer_0" 
+                           type="IDENTIFIABLE">
+                      <d:var name="PortTr1To1GroupId" type="INTEGER" value="0"/>
+                      <d:var name="PortTr1To1GroupName" type="ENUMERATION" 
+                             value="CAN0_DW0_TR">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@CALC</a:v>
+                          <a:v>@DEF</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:lst name="Port1To1OutputTrigger" type="MAP">
+                        <d:ctr name="Port1To1OutputTrigger_0" 
+                               type="IDENTIFIABLE">
+                          <d:var name="PortTr1To1OutputName" type="ENUMERATION" 
+                                 value="CPUSS_DW0_TR_IN_32">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
+                          </d:var>
+                          <d:var name="PortTr1To1InputType" type="ENUMERATION" 
+                                 value="PORT_TR_1TO1_IN_CONST0">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortTr1To1InvertEnable" type="BOOLEAN" 
+                                 value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortTr1To1SensitiveType" 
+                                 type="ENUMERATION" 
+                                 value="PORT_TR_SENSITIVE_LEVEL">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                          <d:var name="PortTr1To1DbgFreezeEnable" 
+                                 type="BOOLEAN" value="false">
+                            <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          </d:var>
+                        </d:ctr>
+                      </d:lst>
+                    </d:ctr>
+                  </d:lst>
+                </d:ctr>
+              </d:lst>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

@@ -1,0 +1,48 @@
+                                -D$(DIE)
+    {isdefined(SERIES)}         -D$(SERIES)
+    {isdefined(DEVICE)}         -D$(DEVICE)
+    {isdefined(MCU_REV)}        -DCY_MCU_$(MCU_REV)
+    {isdefined(USE_PSVP)}       -DCY_USE_PSVP=$(USE_PSVP)
+    {isdefined(USE_ETHSTACK)}   -DUSE_ETHSTACK
+                                -I$(SERIES_FOLDER_REL_PATH)\hdr\$(MCU_REV)
+                                -I$(SERIES_FOLDER_REL_PATH)\hdr\$(MCU_REV)\ip
+                                -I$(SERIES_FOLDER_REL_PATH)\hdr\$(MCU_REV)\mcureg 
+                                -I$(COMMON_FOLDER_REL_PATH)\hdr
+                                -I$(COMMON_FOLDER_REL_PATH)\hdr\cmsis\include
+                                -I$(SERIES_FOLDER_REL_PATH)\src
+                                -I$(SERIES_FOLDER_REL_PATH)\src\interrupts\$(MCU_REV)
+                                -I$(SERIES_FOLDER_REL_PATH)\src\system\$(MCU_REV)
+                                -I$(SERIES_FOLDER_REL_PATH)\src\drivers
+                                -I$(SERIES_FOLDER_REL_PATH)\src\mw
+                                -I$(COMMON_FOLDER_REL_PATH)\src
+                                -I$(COMMON_FOLDER_REL_PATH)\src\drivers   
+                                -I$(COMMON_FOLDER_REL_PATH)\src\mw
+                                -I$(COMMON_FOLDER_REL_PATH)\src\rtos\include
+                                -I$(COMMON_FOLDER_REL_PATH)\src\rtos\portable\$(RTOS_PORT_PATH)
+    {isdefined(USE_ETHSTACK)}   -I$(COMMON_FOLDER_REL_PATH)\src\ethstack\include
+    {isdefined(USE_ETHSTACK)}   -I$(COMMON_FOLDER_REL_PATH)\src\ethstack\portable\Compiler\GHS
+    {isdefined(USE_ETHSTACK)}   -I$(COMMON_FOLDER_REL_PATH)\src\ethstack\portable\NetworkInterface\include                                
+                                -G
+                                -dual_debug             # Generation of DWARF debugging information in the object file (in addition to the GHS .dbo format) for use with 3rd party debuggers
+                                -C99
+                                -align4
+                                --short_enum
+                                --no_commons
+                                --no_alternative_tokens
+                                -asm3g
+                                -preprocess_assembly_files
+                                --preprocess_linker_directive_full
+                                -nostartfiles
+                                -globalcheck=normal
+                                -globalcheck_qualifiers
+                                --prototype_errors
+                                -Wformat
+                                -Wimplicit-int
+                                -Wshadow
+                                -Wtrigraphs
+                                -Wundef
+                                -reject_duplicates
+                                -object_dir=objs
+                                :sourceDir=.
+                                --no_wrap_diagnostics
+                            

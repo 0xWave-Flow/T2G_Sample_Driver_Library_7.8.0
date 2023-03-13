@@ -1,0 +1,17 @@
+#!gbuild
+
+[Subproject]
+
+$(COMMON_FOLDER_REL_PATH)\src\rtos\include\FreeRTOSConfig.h
+$(COMMON_FOLDER_REL_PATH)\src\rtos\portable\$(RTOS_PORT_PATH)\port.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\portable\$(RTOS_PORT_PATH)\portasm.arm
+$(COMMON_FOLDER_REL_PATH)\src\rtos\portable\$(RTOS_PORT_PATH)\portmacro.h
+$(COMMON_FOLDER_REL_PATH)\src\rtos\portable\MemMang\heap_4.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\croutine.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\event_groups.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\list.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\queue.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\stream_buffer.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\tasks.c
+$(COMMON_FOLDER_REL_PATH)\src\rtos\timers.c
+

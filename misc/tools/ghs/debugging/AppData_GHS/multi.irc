@@ -1,0 +1,24 @@
+// $Revision: 186971 $
+// $Date:: 2020-01-15 12:36:03 +0530#$
+//=========================================================================================================================================
+// Create toolbar buttons with Traveo II debug actions in a two step approach
+//
+// This .irc script is executed as soon as the debugger is started.
+// It will create a "D" button on the toolbar which needs to be clicked
+// by the user to start the actual detection that will cover:
+// - Searching relative path to the tvii_debug.py of the current project
+// - Displaying the right "action" buttons depending on the current build configuration
+// The "D" button will be removed at the end because it will no longer be needed while the current debug session is active
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+// Put actual command in separate debugger macro function to avoid issues due to
+// nested quote characters for 'python -s' and 'debugbutton c' parameters
+define tvii_run_detection() {
+    python -b -s "debugger.RunCommands('python -b -f \"' + os.path.join(__ghs_user_config_dir, 'tvii_detect.py') + '\"')"
+}
+
+// Create a button that the user needs to click to create the TVII debug action buttons for the current project.
+// At the time the user clicks the detect button, the "GHS Debugger" Python instance is available and the Python script has access to its methods
+debugbutton traveo_ii_detect c="tvii_run_detection()" i="letter_d16" t="Traveo II: Detect"
+
+//=========================================================================================================================================

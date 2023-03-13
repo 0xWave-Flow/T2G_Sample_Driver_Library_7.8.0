@@ -1,0 +1,15 @@
+#!gbuild
+
+[Subproject]
+
+$(COMMON_FOLDER_REL_PATH)\src\startup\ghs\startup_$(CPU_NAME).arm
+$(COMMON_FOLDER_REL_PATH)\src\startup\startup.c
+$(COMMON_FOLDER_REL_PATH)\src\startup\startup_customize.h
+$(SERIES_FOLDER_REL_PATH)\src\main_$(CPU_NAME)$(CPU_INSTANCE_SUFFIX).c
+$(SERIES_FOLDER_REL_PATH)\src\interrupts\$(MCU_REV)\cy_interrupt_map_$(CPU_NAME)$(CPU_INSTANCE_SUFFIX).h
+$(SERIES_FOLDER_REL_PATH)\src\interrupts\$(MCU_REV)\cy_interrupt_map.c
+$(SERIES_FOLDER_REL_PATH)\src\system\$(MCU_REV)\system_$(SERIES).h
+$(SERIES_FOLDER_REL_PATH)\src\system\$(MCU_REV)\system_$(DIE)_$(CPU_NAME).c
+
+source_$(CPU_NAME)$(CPU_INSTANCE_SUFFIX).gpj
+

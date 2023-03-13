@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fx:FIBEX xmlns:ho="http://www.asam.net/xml" xmlns:most="http://www.asam.net/xml/fbx/most" xmlns:ttcan="http://www.asam.net/xml/fbx/ttcan" xmlns:flexray="http://www.asam.net/xml/fbx/flexray" xmlns:can="http://www.asam.net/xml/fbx/can" xmlns:lin="http://www.asam.net/xml/fbx/lin" xmlns:all="http://www.asam.net/xml/fbx/all" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" VERSION="3.0.0" xmlns:fx="http://www.asam.net/xml/fbx">
+	<fx:PROJECT ID="ProjectType_71aa050bcf6d4fdfb8d086652befee99">
+		<ho:SHORT-NAME>ShortName</ho:SHORT-NAME>
+	</fx:PROJECT>
+	<fx:ELEMENTS>
+		<fx:CLUSTERS>
+			<fx:CLUSTER xsi:type="flexray:CLUSTER-TYPE" ID="FlexRayCluster_7bbd83eec2434d058f5e4cc624b3ce6a">
+				<ho:SHORT-NAME>MyCluster</ho:SHORT-NAME>
+				<fx:SPEED>2500000</fx:SPEED>
+				<fx:IS-HIGH-LOW-BIT-ORDER>true</fx:IS-HIGH-LOW-BIT-ORDER>
+				<fx:BIT-COUNTING-POLICY>SAWTOOTH</fx:BIT-COUNTING-POLICY>
+				<fx:PROTOCOL xsi:type="flexray:PROTOCOL-TYPE">FlexRay</fx:PROTOCOL>
+				<fx:CHANNEL-REFS>
+					<fx:CHANNEL-REF ID-REF="FlexRayChannel_be8f74fef6a544d9a9a51ef6d2fad8bd" />
+					<fx:CHANNEL-REF ID-REF="FlexRayChannel_5aa1f83ded3441e287d325e24574927f" />
+				</fx:CHANNEL-REFS>
+				<flexray:COLD-START-ATTEMPTS>31</flexray:COLD-START-ATTEMPTS>
+				<flexray:ACTION-POINT-OFFSET>14</flexray:ACTION-POINT-OFFSET>
+				<flexray:DYNAMIC-SLOT-IDLE-PHASE>1</flexray:DYNAMIC-SLOT-IDLE-PHASE>
+				<flexray:MINISLOT>8</flexray:MINISLOT>
+				<flexray:MINISLOT-ACTION-POINT-OFFSET>4</flexray:MINISLOT-ACTION-POINT-OFFSET>
+				<flexray:N-I-T>9</flexray:N-I-T>
+				<flexray:SAMPLE-CLOCK-PERIOD>0.05</flexray:SAMPLE-CLOCK-PERIOD>
+				<flexray:STATIC-SLOT>113</flexray:STATIC-SLOT>
+				<flexray:SYMBOL-WINDOW>0</flexray:SYMBOL-WINDOW>
+				<flexray:T-S-S-TRANSMITTER>3</flexray:T-S-S-TRANSMITTER>
+				<flexray:WAKE-UP>
+					<flexray:WAKE-UP-SYMBOL-RX-IDLE>14</flexray:WAKE-UP-SYMBOL-RX-IDLE>
+					<flexray:WAKE-UP-SYMBOL-RX-LOW>13</flexray:WAKE-UP-SYMBOL-RX-LOW>
+					<flexray:WAKE-UP-SYMBOL-RX-WINDOW>76</flexray:WAKE-UP-SYMBOL-RX-WINDOW>
+					<flexray:WAKE-UP-SYMBOL-TX-IDLE>45</flexray:WAKE-UP-SYMBOL-TX-IDLE>
+					<flexray:WAKE-UP-SYMBOL-TX-LOW>15</flexray:WAKE-UP-SYMBOL-TX-LOW>
+				</flexray:WAKE-UP>
+				<flexray:LISTEN-NOISE>2</flexray:LISTEN-NOISE>
+				<flexray:MACRO-PER-CYCLE>2500</flexray:MACRO-PER-CYCLE>
+				<flexray:MACROTICK>2</flexray:MACROTICK>
+				<flexray:MAX-INITIALIZATION-ERROR>6.56</flexray:MAX-INITIALIZATION-ERROR>
+				<flexray:MAX-WITHOUT-CLOCK-CORRECTION-FATAL>2</flexray:MAX-WITHOUT-CLOCK-CORRECTION-FATAL>
+				<flexray:MAX-WITHOUT-CLOCK-CORRECTION-PASSIVE>2</flexray:MAX-WITHOUT-CLOCK-CORRECTION-PASSIVE>
+				<flexray:NUMBER-OF-MINISLOTS>100</flexray:NUMBER-OF-MINISLOTS>
+				<flexray:NUMBER-OF-STATIC-SLOTS>10</flexray:NUMBER-OF-STATIC-SLOTS>
+				<flexray:OFFSET-CORRECTION-START>2492</flexray:OFFSET-CORRECTION-START>
+				<flexray:PAYLOAD-LENGTH-STATIC>16</flexray:PAYLOAD-LENGTH-STATIC>
+				<flexray:SYNC-NODE-MAX>15</flexray:SYNC-NODE-MAX>
+				<flexray:CAS-RX-LOW-MAX>67</flexray:CAS-RX-LOW-MAX>
+				<flexray:BIT>0.4</flexray:BIT>
+				<flexray:CYCLE>5000</flexray:CYCLE>
+				<flexray:CLUSTER-DRIFT-DAMPING>3</flexray:CLUSTER-DRIFT-DAMPING>
+			</fx:CLUSTER>
+		</fx:CLUSTERS>
+		<fx:CHANNELS>
+			<fx:CHANNEL xsi:type="flexray:CHANNEL-TYPE" ID="FlexRayChannel_be8f74fef6a544d9a9a51ef6d2fad8bd">
+				<ho:SHORT-NAME>MyCluster_FlexRayA</ho:SHORT-NAME>
+				<fx:FRAME-TRIGGERINGS>
+					<fx:FRAME-TRIGGERING ID="FrameTriggering_87168332415f4bafa14e6d7e6e878757">
+						<fx:TIMINGS>
+							<fx:ABSOLUTELY-SCHEDULED-TIMING>
+								<fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">3</fx:SLOT-ID>
+								<fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+								<fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">1</fx:CYCLE-REPETITION>
+							</fx:ABSOLUTELY-SCHEDULED-TIMING>
+						</fx:TIMINGS>
+						<fx:FRAME-REF ID-REF="Frame_8e0e81711aa1457eb4f2424dae33be4f" />
+					</fx:FRAME-TRIGGERING>
+					<fx:FRAME-TRIGGERING ID="FrameTriggering_92924b963d9041e29cb7eb2ad3b39349">
+						<fx:TIMINGS>
+							<fx:ABSOLUTELY-SCHEDULED-TIMING>
+								<fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">6</fx:SLOT-ID>
+								<fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+								<fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">1</fx:CYCLE-REPETITION>
+							</fx:ABSOLUTELY-SCHEDULED-TIMING>
+						</fx:TIMINGS>
+						<fx:FRAME-REF ID-REF="Frame_6672521cba2442c5a1e9dd621147497a" />
+					</fx:FRAME-TRIGGERING>
+					<fx:FRAME-TRIGGERING ID="FrameTriggering_663efc67dce14b3b9ff008263929d9dc">
+						<fx:TIMINGS>
+							<fx:ABSOLUTELY-SCHEDULED-TIMING>
+								<fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">13</fx:SLOT-ID>
+								<fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+								<fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">1</fx:CYCLE-REPETITION>
+							</fx:ABSOLUTELY-SCHEDULED-TIMING>
+						</fx:TIMINGS>
+						<fx:FRAME-REF ID-REF="Frame_420b8f85862240429b142d6317e00349" />
+					</fx:FRAME-TRIGGERING>
+					<fx:FRAME-TRIGGERING ID="FrameTriggering_8df28fe65f924f8ea3d2d922d9ce74f9">
+						<fx:TIMINGS>
+							<fx:ABSOLUTELY-SCHEDULED-TIMING>
+								<fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">16</fx:SLOT-ID>
+								<fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+								<fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">1</fx:CYCLE-REPETITION>
+							</fx:ABSOLUTELY-SCHEDULED-TIMING>
+						</fx:TIMINGS>
+						<fx:FRAME-REF ID-REF="Frame_ec6736b7aec64be48fcf7c390fe62912" />
+					</fx:FRAME-TRIGGERING>
+				</fx:FRAME-TRIGGERINGS>
+				<flexray:FLEXRAY-CHANNEL-NAME>A</flexray:FLEXRAY-CHANNEL-NAME>
+			</fx:CHANNEL>
+			<fx:CHANNEL xsi:type="flexray:CHANNEL-TYPE" ID="FlexRayChannel_5aa1f83ded3441e287d325e24574927f">
+				<ho:SHORT-NAME>MyCluster_FlexRayB</ho:SHORT-NAME>
+				<fx:FRAME-TRIGGERINGS>
+					<fx:FRAME-TRIGGERING ID="FrameTriggering_883256166ae4439fbb21a7d6498f652d">
+						<fx:TIMINGS>
+							<fx:ABSOLUTELY-SCHEDULED-TIMING>
+								<fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">3</fx:SLOT-ID>
+								<fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+								<fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">1</fx:CYCLE-REPETITION>
+							</fx:ABSOLUTELY-SCHEDULED-TIMING>
+						</fx:TIMINGS>
+						<fx:FRAME-REF ID-REF="Frame_8e0e81711aa1457eb4f2424dae33be4f" />
+					</fx:FRAME-TRIGGERING>
+					<fx:FRAME-TRIGGERING ID="FrameTriggering_02898ac359414d5fbfebcf255c83a0a7">
+						<fx:TIMINGS>
+							<fx:ABSOLUTELY-SCHEDULED-TIMING>
+								<fx:SLOT-ID xsi:type="flexray:SLOT-ID-TYPE">6</fx:SLOT-ID>
+								<fx:BASE-CYCLE xsi:type="flexray:CYCLE-COUNTER-TYPE">0</fx:BASE-CYCLE>
+								<fx:CYCLE-REPETITION xsi:type="flexray:CYCLE-REPETITION-TYPE">1</fx:CYCLE-REPETITION>
+							</fx:ABSOLUTELY-SCHEDULED-TIMING>
+						</fx:TIMINGS>
+						<fx:FRAME-REF ID-REF="Frame_6672521cba2442c5a1e9dd621147497a" />
+					</fx:FRAME-TRIGGERING>
+				</fx:FRAME-TRIGGERINGS>
+				<flexray:FLEXRAY-CHANNEL-NAME>B</flexray:FLEXRAY-CHANNEL-NAME>
+			</fx:CHANNEL>
+		</fx:CHANNELS>
+		<fx:ECUS>
+			<fx:ECU ID="Ecu_a50b438b351140cb9acb9723efc2fcc9">
+				<ho:SHORT-NAME>TVII_ECU</ho:SHORT-NAME>
+				<fx:CONTROLLERS>
+					<fx:CONTROLLER xsi:type="flexray:CONTROLLER-TYPE" ID="FlexRayController_a3d51c96841740228154d08d93c08dbb">
+						<ho:SHORT-NAME>Node1</ho:SHORT-NAME>
+						<ho:DESC xml:lang="en">Note: PRTC1[15:14] (BRP bitfield) is overwritten and set to 0 in CHI file (see "Edit Register values" menu)</ho:DESC>
+						<fx:VENDOR-NAME>Bosch</fx:VENDOR-NAME>
+						<fx:CHIP-NAME>ERay</fx:CHIP-NAME>
+						<flexray:KEY-SLOT-USAGE>
+							<flexray:STARTUP-SYNC>3</flexray:STARTUP-SYNC>
+						</flexray:KEY-SLOT-USAGE>
+						<flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>8</flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>
+						<flexray:CLUSTER-DRIFT-DAMPING>3</flexray:CLUSTER-DRIFT-DAMPING>
+						<flexray:DECODING-CORRECTION>47</flexray:DECODING-CORRECTION>
+						<flexray:LISTEN-TIMEOUT>203000</flexray:LISTEN-TIMEOUT>
+						<flexray:MAX-DRIFT>1500</flexray:MAX-DRIFT>
+						<flexray:LATEST-TX>92</flexray:LATEST-TX>
+						<flexray:MICRO-PER-CYCLE>100000</flexray:MICRO-PER-CYCLE>
+						<flexray:OFFSET-CORRECTION-OUT>15500</flexray:OFFSET-CORRECTION-OUT>
+						<flexray:RATE-CORRECTION-OUT>1900</flexray:RATE-CORRECTION-OUT>
+						<flexray:SAMPLES-PER-MICROTICK>1</flexray:SAMPLES-PER-MICROTICK>
+						<flexray:DELAY-COMPENSATION-A>0</flexray:DELAY-COMPENSATION-A>
+						<flexray:DELAY-COMPENSATION-B>0</flexray:DELAY-COMPENSATION-B>
+						<flexray:WAKE-UP-PATTERN>2</flexray:WAKE-UP-PATTERN>
+						<flexray:ALLOW-HALT-DUE-TO-CLOCK>false</flexray:ALLOW-HALT-DUE-TO-CLOCK>
+						<flexray:ACCEPTED-STARTUP-RANGE>255</flexray:ACCEPTED-STARTUP-RANGE>
+						<flexray:MACRO-INITIAL-OFFSET-A>16</flexray:MACRO-INITIAL-OFFSET-A>
+						<flexray:MACRO-INITIAL-OFFSET-B>16</flexray:MACRO-INITIAL-OFFSET-B>
+						<flexray:MICRO-INITIAL-OFFSET-A>33</flexray:MICRO-INITIAL-OFFSET-A>
+						<flexray:MICRO-INITIAL-OFFSET-B>33</flexray:MICRO-INITIAL-OFFSET-B>
+						<flexray:MICROTICK>0.05</flexray:MICROTICK>
+					</fx:CONTROLLER>
+				</fx:CONTROLLERS>
+				<fx:CONNECTORS>
+					<fx:CONNECTOR xsi:type="flexray:CONNECTOR-TYPE" ID="FlexRayConnector_4f34314b5c244d08a41e5b1d0f719928">
+						<fx:CHANNEL-REF ID-REF="FlexRayChannel_be8f74fef6a544d9a9a51ef6d2fad8bd" />
+						<fx:CONTROLLER-REF ID-REF="FlexRayController_a3d51c96841740228154d08d93c08dbb" />
+						<fx:INPUTS>
+							<fx:INPUT-PORT ID="EcuPort_59e01f0a926f4d898c0c575d3ea7fb61">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_92924b963d9041e29cb7eb2ad3b39349" />
+								<fx:COMPLETE-FRAME />
+							</fx:INPUT-PORT>
+							<fx:INPUT-PORT ID="EcuPort_d03a933095bf448d8782fe07d455d170">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_8df28fe65f924f8ea3d2d922d9ce74f9" />
+								<fx:COMPLETE-FRAME />
+							</fx:INPUT-PORT>
+						</fx:INPUTS>
+						<fx:OUTPUTS>
+							<fx:OUTPUT-PORT ID="EcuPort_b5cb4c9be31642ea8a2dac8acc7a1f02">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_87168332415f4bafa14e6d7e6e878757" />
+								<fx:COMPLETE-FRAME />
+							</fx:OUTPUT-PORT>
+							<fx:OUTPUT-PORT ID="EcuPort_34440b7e6f214a8ba264b55939ebd219">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_663efc67dce14b3b9ff008263929d9dc" />
+								<fx:COMPLETE-FRAME />
+							</fx:OUTPUT-PORT>
+						</fx:OUTPUTS>
+						<flexray:WAKE-UP-CHANNEL>false</flexray:WAKE-UP-CHANNEL>
+					</fx:CONNECTOR>
+					<fx:CONNECTOR xsi:type="flexray:CONNECTOR-TYPE" ID="FlexRayConnector_88e7b8835b5f4fee9990708f0f92ae7e">
+						<fx:CHANNEL-REF ID-REF="FlexRayChannel_5aa1f83ded3441e287d325e24574927f" />
+						<fx:CONTROLLER-REF ID-REF="FlexRayController_a3d51c96841740228154d08d93c08dbb" />
+						<fx:INPUTS>
+							<fx:INPUT-PORT ID="EcuPort_303040e8c92f45369f9e889a60f5189b">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_02898ac359414d5fbfebcf255c83a0a7" />
+								<fx:COMPLETE-FRAME />
+							</fx:INPUT-PORT>
+						</fx:INPUTS>
+						<fx:OUTPUTS>
+							<fx:OUTPUT-PORT ID="EcuPort_76eec531ce594a63a5a74904c8a55268">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_883256166ae4439fbb21a7d6498f652d" />
+								<fx:COMPLETE-FRAME />
+							</fx:OUTPUT-PORT>
+						</fx:OUTPUTS>
+						<flexray:WAKE-UP-CHANNEL>false</flexray:WAKE-UP-CHANNEL>
+					</fx:CONNECTOR>
+				</fx:CONNECTORS>
+			</fx:ECU>
+			<fx:ECU ID="Ecu_2bbc33bfe90a4308a61a57360eed15d0">
+				<ho:SHORT-NAME>Other_ECU</ho:SHORT-NAME>
+				<fx:CONTROLLERS>
+					<fx:CONTROLLER xsi:type="flexray:CONTROLLER-TYPE" ID="FlexRayController_8a561467b6244143a14d82d3dce89e21">
+						<ho:SHORT-NAME>Node2</ho:SHORT-NAME>
+						<ho:DESC xml:lang="en">Note: PRTC1[15:14] (BRP bitfield) is overwritten and set to 0 in CHI file (see "Edit Register values" menu)</ho:DESC>
+						<fx:VENDOR-NAME>Bosch</fx:VENDOR-NAME>
+						<fx:CHIP-NAME>ERay</fx:CHIP-NAME>
+						<flexray:KEY-SLOT-USAGE>
+							<flexray:STARTUP-SYNC>6</flexray:STARTUP-SYNC>
+						</flexray:KEY-SLOT-USAGE>
+						<flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>8</flexray:MAX-DYNAMIC-PAYLOAD-LENGTH>
+						<flexray:CLUSTER-DRIFT-DAMPING>3</flexray:CLUSTER-DRIFT-DAMPING>
+						<flexray:DECODING-CORRECTION>47</flexray:DECODING-CORRECTION>
+						<flexray:LISTEN-TIMEOUT>203000</flexray:LISTEN-TIMEOUT>
+						<flexray:MAX-DRIFT>1500</flexray:MAX-DRIFT>
+						<flexray:LATEST-TX>92</flexray:LATEST-TX>
+						<flexray:MICRO-PER-CYCLE>100000</flexray:MICRO-PER-CYCLE>
+						<flexray:OFFSET-CORRECTION-OUT>15500</flexray:OFFSET-CORRECTION-OUT>
+						<flexray:RATE-CORRECTION-OUT>1900</flexray:RATE-CORRECTION-OUT>
+						<flexray:SAMPLES-PER-MICROTICK>1</flexray:SAMPLES-PER-MICROTICK>
+						<flexray:DELAY-COMPENSATION-A>0</flexray:DELAY-COMPENSATION-A>
+						<flexray:DELAY-COMPENSATION-B>0</flexray:DELAY-COMPENSATION-B>
+						<flexray:WAKE-UP-PATTERN>2</flexray:WAKE-UP-PATTERN>
+						<flexray:ALLOW-HALT-DUE-TO-CLOCK>false</flexray:ALLOW-HALT-DUE-TO-CLOCK>
+						<flexray:ACCEPTED-STARTUP-RANGE>255</flexray:ACCEPTED-STARTUP-RANGE>
+						<flexray:MACRO-INITIAL-OFFSET-A>16</flexray:MACRO-INITIAL-OFFSET-A>
+						<flexray:MACRO-INITIAL-OFFSET-B>16</flexray:MACRO-INITIAL-OFFSET-B>
+						<flexray:MICRO-INITIAL-OFFSET-A>33</flexray:MICRO-INITIAL-OFFSET-A>
+						<flexray:MICRO-INITIAL-OFFSET-B>33</flexray:MICRO-INITIAL-OFFSET-B>
+						<flexray:MICROTICK>0.05</flexray:MICROTICK>
+					</fx:CONTROLLER>
+				</fx:CONTROLLERS>
+				<fx:CONNECTORS>
+					<fx:CONNECTOR xsi:type="flexray:CONNECTOR-TYPE" ID="FlexRayConnector_541ce38fd9dc456dbf3321d78a341bc6">
+						<fx:CHANNEL-REF ID-REF="FlexRayChannel_be8f74fef6a544d9a9a51ef6d2fad8bd" />
+						<fx:CONTROLLER-REF ID-REF="FlexRayController_8a561467b6244143a14d82d3dce89e21" />
+						<fx:INPUTS>
+							<fx:INPUT-PORT ID="EcuPort_df8ae19ce6124ce385895150923ffd93">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_87168332415f4bafa14e6d7e6e878757" />
+								<fx:COMPLETE-FRAME />
+							</fx:INPUT-PORT>
+							<fx:INPUT-PORT ID="EcuPort_cc3d3828b34546869103e09f73fe859d">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_663efc67dce14b3b9ff008263929d9dc" />
+								<fx:COMPLETE-FRAME />
+							</fx:INPUT-PORT>
+						</fx:INPUTS>
+						<fx:OUTPUTS>
+							<fx:OUTPUT-PORT ID="EcuPort_83e42137ac4f49e4a03c3d6f874ddf10">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_92924b963d9041e29cb7eb2ad3b39349" />
+								<fx:COMPLETE-FRAME />
+							</fx:OUTPUT-PORT>
+							<fx:OUTPUT-PORT ID="EcuPort_99260dbfca2c4538ad37f01b101d4712">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_8df28fe65f924f8ea3d2d922d9ce74f9" />
+								<fx:COMPLETE-FRAME />
+							</fx:OUTPUT-PORT>
+						</fx:OUTPUTS>
+						<flexray:WAKE-UP-CHANNEL>false</flexray:WAKE-UP-CHANNEL>
+					</fx:CONNECTOR>
+					<fx:CONNECTOR xsi:type="flexray:CONNECTOR-TYPE" ID="FlexRayConnector_723624d8cf734e41867347037fafee75">
+						<fx:CHANNEL-REF ID-REF="FlexRayChannel_5aa1f83ded3441e287d325e24574927f" />
+						<fx:CONTROLLER-REF ID-REF="FlexRayController_8a561467b6244143a14d82d3dce89e21" />
+						<fx:INPUTS>
+							<fx:INPUT-PORT ID="EcuPort_4170bd58a93b4ecc88260f9db6005361">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_883256166ae4439fbb21a7d6498f652d" />
+								<fx:COMPLETE-FRAME />
+							</fx:INPUT-PORT>
+						</fx:INPUTS>
+						<fx:OUTPUTS>
+							<fx:OUTPUT-PORT ID="EcuPort_8548dab5d0db45a3a2edc9dbc5a26457">
+								<fx:FRAME-TRIGGERING-REF ID-REF="FrameTriggering_02898ac359414d5fbfebcf255c83a0a7" />
+								<fx:COMPLETE-FRAME />
+							</fx:OUTPUT-PORT>
+						</fx:OUTPUTS>
+						<flexray:WAKE-UP-CHANNEL>false</flexray:WAKE-UP-CHANNEL>
+					</fx:CONNECTOR>
+				</fx:CONNECTORS>
+			</fx:ECU>
+		</fx:ECUS>
+		<fx:PDUS>
+			<fx:PDU ID="Pdu_2694442bc1e44e38bbe2d72678bc6e0c">
+				<ho:SHORT-NAME>BargraphNode1Pdu</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>1</fx:BYTE-LENGTH>
+				<fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+				<fx:SIGNAL-INSTANCES>
+					<fx:SIGNAL-INSTANCE ID="PduSignalInstance_07a1f365020642e8856e4bfc9121fd9f">
+						<fx:BIT-POSITION>7</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+						<fx:SIGNAL-REF ID-REF="Signal_cc19e49537d145d58f16a6d68ad28767" />
+					</fx:SIGNAL-INSTANCE>
+				</fx:SIGNAL-INSTANCES>
+			</fx:PDU>
+			<fx:PDU ID="Pdu_d31b908f6b774a8c8386379ca5d5222e">
+				<ho:SHORT-NAME>BargraphIncHexCharNode1Pdu</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>1</fx:BYTE-LENGTH>
+				<fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+				<fx:SIGNAL-INSTANCES>
+					<fx:SIGNAL-INSTANCE ID="PduSignalInstance_2a482c4e89d44101a89aaa7be4285270">
+						<fx:BIT-POSITION>7</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+						<fx:SIGNAL-REF ID-REF="Signal_d1553cad6f83445bb4e043b25899ad03" />
+					</fx:SIGNAL-INSTANCE>
+				</fx:SIGNAL-INSTANCES>
+			</fx:PDU>
+			<fx:PDU ID="Pdu_13ed5a6cbdd245b29b1657394424ce71">
+				<ho:SHORT-NAME>BargraphNode2Pdu</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>1</fx:BYTE-LENGTH>
+				<fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+				<fx:SIGNAL-INSTANCES>
+					<fx:SIGNAL-INSTANCE ID="PduSignalInstance_c74f0f83de9a45d3b410982d8af02c18">
+						<fx:BIT-POSITION>7</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+						<fx:SIGNAL-REF ID-REF="Signal_ff51d1eed38f4e3eacbfc8073e8ff7a6" />
+					</fx:SIGNAL-INSTANCE>
+				</fx:SIGNAL-INSTANCES>
+			</fx:PDU>
+			<fx:PDU ID="Pdu_ae13960d27d64b32a4b08ef27d4dc283">
+				<ho:SHORT-NAME>BargraphIncHexCharNode2Pdu</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>1</fx:BYTE-LENGTH>
+				<fx:PDU-TYPE>APPLICATION</fx:PDU-TYPE>
+				<fx:SIGNAL-INSTANCES>
+					<fx:SIGNAL-INSTANCE ID="PduSignalInstance_4b1be9b560c545faad4be92a5b05f5bf">
+						<fx:BIT-POSITION>7</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+						<fx:SIGNAL-REF ID-REF="Signal_0504dd5b8f7e423191c3f54406b6f743" />
+					</fx:SIGNAL-INSTANCE>
+				</fx:SIGNAL-INSTANCES>
+			</fx:PDU>
+		</fx:PDUS>
+		<fx:FRAMES>
+			<fx:FRAME ID="Frame_8e0e81711aa1457eb4f2424dae33be4f">
+				<ho:SHORT-NAME>BargraphNode1Frame</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>32</fx:BYTE-LENGTH>
+				<fx:PDU-INSTANCES>
+					<fx:PDU-INSTANCE ID="PduInstance_9e503b6e706d4aaeb3b335051f206f9d">
+						<fx:PDU-REF ID-REF="Pdu_2694442bc1e44e38bbe2d72678bc6e0c" />
+						<fx:BIT-POSITION>0</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+					</fx:PDU-INSTANCE>
+				</fx:PDU-INSTANCES>
+			</fx:FRAME>
+			<fx:FRAME ID="Frame_6672521cba2442c5a1e9dd621147497a">
+				<ho:SHORT-NAME>BargraphNode2Frame</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>32</fx:BYTE-LENGTH>
+				<fx:PDU-INSTANCES>
+					<fx:PDU-INSTANCE ID="PduInstance_eccb63f922a848cc946bd468517fde1e">
+						<fx:PDU-REF ID-REF="Pdu_13ed5a6cbdd245b29b1657394424ce71" />
+						<fx:BIT-POSITION>0</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+					</fx:PDU-INSTANCE>
+				</fx:PDU-INSTANCES>
+			</fx:FRAME>
+			<fx:FRAME ID="Frame_420b8f85862240429b142d6317e00349">
+				<ho:SHORT-NAME>BargraphIncrHexCharNode1Frame</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+				<fx:PDU-INSTANCES>
+					<fx:PDU-INSTANCE ID="PduInstance_2e26d94533554fb5981aa5f2902a5527">
+						<fx:PDU-REF ID-REF="Pdu_d31b908f6b774a8c8386379ca5d5222e" />
+						<fx:BIT-POSITION>0</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+					</fx:PDU-INSTANCE>
+				</fx:PDU-INSTANCES>
+			</fx:FRAME>
+			<fx:FRAME ID="Frame_ec6736b7aec64be48fcf7c390fe62912">
+				<ho:SHORT-NAME>BargraphIncHexCharNode2Frame</ho:SHORT-NAME>
+				<fx:BYTE-LENGTH>16</fx:BYTE-LENGTH>
+				<fx:PDU-INSTANCES>
+					<fx:PDU-INSTANCE ID="PduInstance_04d6e3e635bb46e79ec7a7afdf024e27">
+						<fx:PDU-REF ID-REF="Pdu_ae13960d27d64b32a4b08ef27d4dc283" />
+						<fx:BIT-POSITION>0</fx:BIT-POSITION>
+						<fx:IS-HIGH-LOW-BYTE-ORDER>true</fx:IS-HIGH-LOW-BYTE-ORDER>
+					</fx:PDU-INSTANCE>
+				</fx:PDU-INSTANCES>
+			</fx:FRAME>
+		</fx:FRAMES>
+		<fx:SIGNALS>
+			<fx:SIGNAL ID="Signal_cc19e49537d145d58f16a6d68ad28767">
+				<ho:SHORT-NAME>BargraphNode1Signal</ho:SHORT-NAME>
+				<fx:CODING-REF ID-REF="Coding_f87a95edd3214867a32e3be5a36f8680" />
+			</fx:SIGNAL>
+			<fx:SIGNAL ID="Signal_d1553cad6f83445bb4e043b25899ad03">
+				<ho:SHORT-NAME>BargraphIncHexCharNode1Signal</ho:SHORT-NAME>
+				<fx:CODING-REF ID-REF="Coding_f87a95edd3214867a32e3be5a36f8680" />
+			</fx:SIGNAL>
+			<fx:SIGNAL ID="Signal_ff51d1eed38f4e3eacbfc8073e8ff7a6">
+				<ho:SHORT-NAME>BargraphNode2Signal</ho:SHORT-NAME>
+				<fx:CODING-REF ID-REF="Coding_f87a95edd3214867a32e3be5a36f8680" />
+			</fx:SIGNAL>
+			<fx:SIGNAL ID="Signal_0504dd5b8f7e423191c3f54406b6f743">
+				<ho:SHORT-NAME>BargraphIncHexCharNode2Signal</ho:SHORT-NAME>
+				<fx:CODING-REF ID-REF="Coding_f87a95edd3214867a32e3be5a36f8680" />
+			</fx:SIGNAL>
+		</fx:SIGNALS>
+	</fx:ELEMENTS>
+	<fx:PROCESSING-INFORMATION>
+		<fx:CODINGS>
+			<fx:CODING ID="Coding_f87a95edd3214867a32e3be5a36f8680">
+				<ho:SHORT-NAME>Coding_uint8</ho:SHORT-NAME>
+				<ho:CODED-TYPE ho:BASE-DATA-TYPE="A_UINT8" CATEGORY="STANDARD-LENGTH-TYPE" ENCODING="UNSIGNED">
+					<ho:BIT-LENGTH>8</ho:BIT-LENGTH>
+				</ho:CODED-TYPE>
+			</fx:CODING>
+		</fx:CODINGS>
+	</fx:PROCESSING-INFORMATION>
+</fx:FIBEX>

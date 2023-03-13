@@ -1,0 +1,15 @@
+; C:\Users\rmkn\Documents\Work\Documents\Technical\Traveo\Working\Miscellaneous\TraveoII\TVII-B-E-Family\TVII-B-E-1M\SW-FW\SDL\TVII_SampleSW_136037\src\examples\canfd\UseAsCANFDMode\Peak.xmt
+; CAN messages saved by PCAN-View 4.1.2
+;
+; Columns descriptions:
+; ~~~~~~~~~~~~~~~~~~~~~
+; +Message ID
+; |            +Cycle time in ms (0=manual)
+; |            |  +Data length
+; |            |  |  +Frame type
+; |            |  |  |  +Message data
+; |            |  |  |  |
+010h         500  64 B 11h 22h 33h 44h 55h 66h 77h 88h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h
+400h         300  8  D 01h 02h 03h 04h 05h 06h 07h 08h  Paused
+300h         500  8  D 00h 01h 02h 03h 04h 05h 06h 07h  Paused
+020h         500  64 B 01h 02h 03h 04h 05h 06h 07h 08h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h 00h

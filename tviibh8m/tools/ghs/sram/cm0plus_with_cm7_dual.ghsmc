@@ -1,0 +1,20 @@
+version = 1
+title = "Traveo II"
+
+core {
+    1 {
+        alias = "cm0plus"
+        download = {"cm0plus/cm0plus.elf"}
+    }
+    2 {
+        alias = "cm7_0"
+        download = {"cm7_0/cm7_0.elf"}
+    }
+    3 {
+        alias = "cm7_1"
+        download = {"cm7_1/cm7_1.elf"}
+    }
+    
+}
+    
+    

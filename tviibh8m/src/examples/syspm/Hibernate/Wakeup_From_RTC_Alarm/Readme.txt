@@ -1,0 +1,1 @@
+Enabling HIBERNATE only on CM0+ and toggling LED on the other cores.

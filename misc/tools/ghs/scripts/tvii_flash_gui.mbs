@@ -1,0 +1,42 @@
+//=====================================================================================================
+// GreenHills MBS Script to be used as "Target setup script" in GHS Flash GUI for Traveo II targets  //
+//                                                                                                   //
+// Further parameters that need to be setup in the GUI:                                              //
+// - Flash bank, e.g. 0x10000000 for Code Flash                                                      //
+// - Target RAM, e.g. 0x08001000 for CM4-based devices,                                              //
+//                or  0x28001000 for CM7-based devices                                               //
+//   Note: Do not specify the start of SRAM, as the first 2KB may not be accessible                  //
+//         depending on MCU revision (protected by SROM for its private data)                        //
+// - Target RAM size, e.g. 64KB (should be working with all Traveo II devices)                       //
+//=====================================================================================================
+
+// This script is based on the tvii_debug.py script
+
+// CM0+ --> Core #1 ("target t 1 [command]")
+
+// Initial (uncontrolled) reset by XRES and subsequent halt
+target t 1 tr r
+target t 1 jr
+target t 1 th
+
+// (Controlled) reset by AIRCR_SYSRESETREQ and expecting "reset vector catch" to halt CM0+
+target t 1 tset catch_reset on
+target quiet -- nofail t 1 rw nvic_aircr 0x05fa0004
+wait -time 200 -stop
+target t 1 th
+target t 1 tset catch_reset off
+
+// Enable flash writing of Code Flash and Work Flash in corresponding "safety" registers
+target t 1 mw 4 0x4024f400 0x00000001
+target t 1 mw 4 0x4024f500 0x00000001
+
+// Ensure that system calls are working reliably 
+target t 1 rw nvic_aircr 0x05fa0002
+target t 1 rw vtor 0   
+target t 1 rw primask 0
+target t 1 rw syst_csr 0
+target t 1 rw mpu_ctrl 0
+target t 1 mw 4 0xe000e100 0x00000003
+target t 1 mw 4 0xe000e180 0xfffffffc
+target t 1 mw 4 0xe000e400 0x00000040
+

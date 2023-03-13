@@ -1,0 +1,1 @@
+Set project optimization to "None", build and try the example

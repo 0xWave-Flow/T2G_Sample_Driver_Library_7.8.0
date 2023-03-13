@@ -1,0 +1,8 @@
+#!gbuild
+
+macro BUILD_TARGET=libethstack.gpj
+
+[Subproject]
+
+cm7_x.gpj
+

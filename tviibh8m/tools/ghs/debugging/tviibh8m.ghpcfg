@@ -1,0 +1,102 @@
+{ 
+  "what" : "This is a config file for a Green Hills Probe or SuperTrace Probe. Load it with mpadmin -cfgload -usb <filename>.ghpcfg", 
+  "version" : [ 
+    2, 
+    0
+  ], 
+  "config" : [ 
+    { 
+      "options" : { 
+        "global" : { 
+          "adapter" : "auto",
+          "clock" : "0.5 MHz", 
+          "etm_arch_version" : "3.4", 
+          "use_rtck" : "off", 
+          "debug_type" : "SWD",
+          "logic_high" : "3.3",
+          "target" : "csdap(m0 m7*2 itm*2 cstf etb tpiu cti*4)",
+          "checker" : "on", 
+          "power_detect" : "on", 
+          "verify_download" : "sparse", 
+          "rst_pulse" : "10 ms", 
+          "rst_settle" : "10 ms", 
+          "power_on_settle" : "0 ms", 
+          "jrst_pulse" : "10 ms", 
+          "jrst_settle" : "10 ms", 
+          "target_reset_pin" : "resets_tap"
+        }, 
+        "core 0" : { 
+          "coresight_timeout" : "50 ms", 
+          "ignore_csyspwrupack" : "off"
+        }, 
+        "core 1" : { 
+          "ahb_index" : "0x1", 
+          "catch_reset" : "off", 
+          "endianness" : "little", 
+          "num_dwt" : "0x2", 
+          "reset_detection" : "standard", 
+          "step_ints" : "off"
+        }, 
+        "core 2" : { 
+          "ahb_index" : "0x2", 
+          "catch_reset" : "off", 
+          "endianness" : "little",
+          "has_etm" : "on", 
+          "num_dwt" : "0x4", 
+          "reset_detection" : "manual", 
+          "step_ints" : "off"
+        }, 
+        "core 3" : { 
+          "ahb_index" : "0x3", 
+          "catch_reset" : "off", 
+          "endianness" : "little",
+          "has_etm" : "on", 
+          "num_dwt" : "0x4", 
+          "reset_detection" : "manual", 
+          "step_ints" : "off"
+        }, 
+        "core 4" : { 
+          "address" : "0xe0000000", 
+          "ap_index" : "0x2"
+        }, 
+        "core 5" : { 
+          "address" : "0xe0000000", 
+          "ap_index" : "0x3"
+        }, 
+        "core 6" : { 
+          "address" : "0xe008c000", 
+          "ap_index" : "0x2"
+        }, 
+        "core 7" : { 
+          "address" : "0xe008d000", 
+          "ap_index" : "0x2", 
+          "ramdepth" : "auto", 
+          "triggerin_cti_core" : "none"
+        }, 
+        "core 8" : { 
+          "address" : "0xe008e000", 
+          "ap_index" : "0x2",
+          "tpiu_supp_port_size" : "auto", 
+          "tpiu_type" : "full"
+        }, 
+        "core 9" : { 
+          "address" : "0xe0042000", 
+          "ap_index" : "0x2"
+        }, 
+        "core 10" : { 
+          "address" : "0xe0042000", 
+          "ap_index" : "0x3"
+        }, 
+        "core 11" : { 
+          "address" : "0xe0080000", 
+          "ap_index" : "0x2"
+        }, 
+        "core 12" : { 
+          "address" : "0xf0002000", 
+          "ap_index" : "0x1"
+        }
+      }
+    }
+  ]
+}
+

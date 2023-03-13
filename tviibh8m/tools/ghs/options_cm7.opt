@@ -1,0 +1,5 @@
+    -DCY_CORE_CM7$(CPU_INSTANCE_SUFFIX)
+    -D__ICACHE_PRESENT=1
+    -D__DCACHE_PRESENT=1
+    -cpu=cortexm7
+    -fhard            # Can be removed once GHS provides a 'cortexm7f' -cpu option

@@ -1,0 +1,9 @@
+#!gbuild
+
+macro CPU_NAME=cm7
+macro CPU_INSTANCE_SUFFIX=
+
+[Subproject]
+
+$(BUILD_TARGET)
+    :optionsFile=options_$(CPU_NAME).opt

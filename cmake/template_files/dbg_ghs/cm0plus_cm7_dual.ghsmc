@@ -1,0 +1,19 @@
+version = 1
+title = "Traveo II"
+
+core {
+    1 {
+        alias = "cm0plus"
+        download = {"../${ARG_EXE_NAME_CM0PLUS}${CMAKE_EXECUTABLE_SUFFIX}"}
+    }
+    2 {
+        alias = "cm7_0"
+        download = {"../${ARG_EXE_NAME_CM7_0}${CMAKE_EXECUTABLE_SUFFIX}"}
+    }
+    3 {
+        alias = "cm7_1"
+        download = {"../${ARG_EXE_NAME_CM7_1}${CMAKE_EXECUTABLE_SUFFIX}"}
+    }    
+}
+    
+    
